@@ -1,0 +1,5 @@
+/*  logo */
+#logo1 {z-index: 100; display:block; position: absolute; top: 93px; left: 0; width: 270px; height: 112px; font: bold 15px Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif; color: #000; text-align: center; text-transform: uppercase; margin: 0; padding: 0; background: none; border: none;}
+#logo1 a,#logo span {display: block; position: absolute; top: 0px; left: 0; width: 100%; height: 100%; background: url("../img/logo.png") no-repeat; text-indent: -900em; outline: none;}
+#logo1 dfn {display: block; color: #f3ae00}
+/* /logo */

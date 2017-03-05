@@ -1,0 +1,20 @@
+<div class="testimonials">
+        <h2>Отзывы</h2>
+        <ul>
+             {% for testimonials in testimonials_list%}
+
+              <li>
+               <span class="name">{{testimonials.name}}</span>
+               <var class="date">{{testimonials.dateCreate}}</var>
+               <dfn class="rating r{{testimonials.rating}}">отлично<span></span></dfn>
+               <p>Купила один из стабилизаторов. Стоит дома....<a href="http://energoforum/testimonials.html"> подробнее</a> </p>
+              </li>
+
+
+            {%endfor%}
+
+
+
+        </ul>
+        <a href="http://energoforum/testimonials.html">добавить отзыв</a>
+      </div>

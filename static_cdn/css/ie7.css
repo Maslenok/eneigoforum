@@ -1,0 +1,14 @@
+/* Disable a deprecated */
+font,basefont {color: expression(this.parentNode.currentStyle['color']); font-family: expression(this.parentNode.currentStyle['fontFamily'])}
+center {text-align: expression(this.parentNode.currentStyle['textAlign'])}
+s,strike,u {text-decoration: expression(this.parentNode.currentStyle['textDecoration'])}
+
+div#header {
+  scrollbar-track-color:expression(
+  this.runtimeStyle.scrollbarTrackColor = "#fff",
+  ((screen.deviceXDPI/screen.logicalXDPI) == 1) ? (document.body.style.fontSize = 1/(screen.logicalYDPI/96) +'em') : false
+  );
+}
+
+ul.pager li {display: inline;}
+ul.pager li.prev-page a span,ul.pager li.next-page a span {top: 12px}

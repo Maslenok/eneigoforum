@@ -1,0 +1,553 @@
+/*MARY*/
+div.podbor { position: absolute; top: 454px; right: 950px; width: 130px; height:242px; }
+div.podbor  a { position: relative; display: block; width: 100px; height:245px; font-size: 1.25em; font-weight: bold; color:#fff; text-align: center; text-decoration: none; background:#c85139; }
+div.podbor  a span { position:absolute; top:0; left:0; height:100%; width:100%; background: url("../img/podbor.jpg"); cursor: pointer !important}
+
+div.discount { position: absolute; top: 700px; right: 950px; width: 130px; height:242px; }
+div.discount  a { position: relative; display: block; width: 100px; height:245px; font-size: 1.25em; font-weight: bold; color:#fff; text-align: center; text-decoration: none; background:#c85139; }
+div.discount  a span { position:absolute; top:0; left:0; height:100%; width:100%; background: url("../img/discount.jpg"); cursor: pointer !important}
+
+.offers{padding:12px 27px 0 15px;  position: absolute; top: 20px; left:110px; z-index:10; width:54px; height:65px;  background:url(../img/percent.png) no-repeat; color:#ff7a25; font: normal 1.3em Impact;}
+.offersbig{padding:12px 27px 25px 20px;  position: absolute; top: 70px; left:220px; z-index:10; width:54px; height:65px;  background:url(../img/percentbig.png) no-repeat; color:#ff7a25; font: normal 2em Impact;}
+
+#divaddtocart{position:fixed;  top:0; left:50%; width:960px; margin:0 0 0 -485px; border:2px solid #FFBF00; text-align:center; padding:20px 0; font-size:20px; background: #fff;  z-index: 650;  color: #000; visibility:hidden;   _position:absolute; _top: expression(eval(document.documentElement.scrollTop))}
+#divaddtocart var{ font-family:Georgia, "Times New Roman", Times, serif; color:#e3ac16; font-weight:bold; text-transform:uppercase;}
+form.contact-form fieldset fieldset.btn_wrapper input#btn_send {margin: 0 0px 0 0; float: right; border: none; padding: 0; width: 80px; height: 19px; color: #fff; font-size: 0.0001px; text-indent: -999em; background: url("../img/btns.png") 0 -113px no-repeat; cursor: pointer;}
+table.podbor td{width:400px;}
+table.podbor td.sel{background:#ffffc5;}
+table.podbor1 td{width:200px}
+table.podbor1 td.sel{background:#ddddff;}
+/*shop*/
+div.shop_block_search {position: relative; overflow: hidden; margin: 20px 0; padding: 0 0 15px; border-bottom: 1px solid #c5c5c5; font-size: 0.929em;}
+
+  div.shop_block_search div.prod_ill {float: left; margin: 0px 9px 5px 0;}
+      div.shop_block_search div.prod_ill a.ill {display: block; width: 79px; padding: 0 13px 11px 3px; background: url("../img/bg_frame-shop-small-ill.png") 0 bottom no-repeat;}
+        div.shop_block_search div.prod_ill a.ill img {border-top: 3px solid #EAEAEA; width: 79px; display: block;}
+
+
+  div.shop_block_search dl.prod-param {float: left; margin: 0 0 5px; width: 380px;}
+    div.shop_block_search dl.prod-param dt {margin: 0; width: 218px; color: #000;}
+    div.shop_block_search dl.prod-param dd {margin: -18px 0 4px 0; padding: 0 0 0 218px;}
+
+
+  div.shop_block_search div.prod-review {clear: both; margin: 5px 0;}
+    div.shop_block_search div.prod-review h2 {font: normal 1em/1 "Trebuchet MS"; color: #000; margin: 0;}
+    div.shop_block_search div.prod-review p {margin: 7px 0;}
+
+
+  div.shop_block_search ul.prod-opt {margin: 11px 0 0;}
+    div.shop_block_search ul.prod-opt li {margin: 0; padding: 0; float: left; background: none;}
+      div.shop_block_search ul.prod-opt li.price var {font-size: 1.23em; color: #fff; background: #4972ae; padding: 0 5px;}
+
+    div.shop_block_search ul.prod-opt li.buy {float: right;}
+      div.shop_block_search ul.prod-opt li.buy a {display: block; position: relative; width: 106px; height: 19px;}
+        div.shop_block_search ul.prod-opt li.buy a span {display: block; position: absolute; top: 0; left: 0; width: 106px; height: 19px; background: url("../img/btns.png") 0 -95px no-repeat; cursor: pointer;}
+
+      div.shop_block_search a.more {float: right; display: block; position: relative; width: 106px; height: 19px;}
+		div.shop_block_search a.more span {display: block; position: absolute; top: 0; left: 0; width: 106px; height: 19px; background: url("../img/btns.png") 0 -95px no-repeat; cursor: pointer;}
+
+/* \ MARY*/
+
+@charset "utf-8";
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+img {border: 0; padding: 0; font-size: 100%; background: transparent;}
+dfn,var {font-style: normal;}
+
+/* Disable a deprecated */
+font,basefont {color: inherit; font: inherit; font-size: 100%;}
+center {text-align: inherit;}
+s,strike,u {text-decoration: inherit;}
+
+p {margin: 1em 0;}
+p:first-child {margin-top: 0 !important;}
+p+ul, p+ol {margin-top: -0.5em;}
+
+/*************** Representation ***************/
+
+       /* ++ Standard elements ++ */
+a.inner   {text-decoration: none; border-bottom: 1px dashed #0545af;}
+a.external {color: #f0f0f0; padding-right: 10px; background: url("../img/ico_external.png") right 0px no-repeat;}
+
+input,select,textarea,button {margin: 0; font-size: 92%;}
+fieldset {padding: 0.5em; border: solid 1px #ccc;}
+legend   {color: #ccc;}
+  input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="tel"] {padding: 2px 4px; border: 1px solid #a7a7a7; background: #fff;}
+          input.text,input.password {padding: 2px 4px; border: 1px solid #a7a7a7; background: #fff;}
+  input[type="hidden"] {display: none !important;}
+          input.hidden {display: none !important;}
+  input[type="image"],input[type="checkbox"],input[type="radio"] {width: auto !important;}
+          input.image,input.checkbox,input.radio {width: auto !important;}
+textarea {padding: 2px 4px; border: 1px solid #a7a7a7; background: #fff;}
+input,label,select {vertical-align: middle;}
+select {background: #fff;}
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {}
+applet,object,iframe {overflow: hidden;}
+
+hr    {clear: both; border: none; color: #ccc; background-color: #ccc; height: 1px; width: 100%; margin: 20px 0; padding: 0;}
+* html hr {margin: 13px 0}
+* + html hr {margin: 13px 0}
+
+table {margin: 1em 0; border-collapse: collapse; table-layout: auto; border-spacing: 0; empty-cells: show;  word-wrap: break-word; border: none; width: 100%;}
+    table th {padding: 0.5em; text-align: left; font-size: 15px; color: #000; vertical-align: middle; font-weight: bold; border-bottom: 3px solid #e3ac16}
+    table td {padding: 0.5em; vertical-align: top; border-bottom: 1px solid #c5c5c5}
+    table tr.nth-child td {background: #f7f7f7}
+    table caption {caption-side: top; text-align: center;}
+
+       /* -- List's -- */
+ul {margin: 1em 0 1em 1em; padding: 0; list-style-type: none;}
+   ul li {margin: 0.2em 0; padding: 0 0 0 18px; background: url("../img/bull_li.png") 0px 0.55em no-repeat;}
+   ul.v2 li {background: url("../img/bull_li2.png") 0px 0.45em no-repeat;}
+   ul.v1 li {margin: 0.2em 0; padding: 0 0 0 18px; background: url("../img/bull_li.png") 0px 0.55em no-repeat;}
+   li ul,dd ul {margin: 0;}
+        ul[type=disc], li[type=disc] { list-style-type: disc; }
+        ul[type=circle], li[type=circle] { list-style-type: circle; }
+        ul[type=square], li[type=square] { list-style-type: square; }
+ol {margin: 1em 0 1em 1em; padding: 0; list-style-position: inside;}
+   ol li {margin: 0.2em 0; padding: 0;}
+   li ol,dd ol {margin: 0 0 0 1.5em;}
+dl {margin: 1em 0; padding: 0;}
+   dl dt {margin: 0.5em 0 0 0; padding: 0;}
+   dl dd {margin: 0 0 0.5em 1.5em; padding: 0;}
+
+       /* -- Images -- */
+img {display: block; border: none; vertical-align: middle; font: normal 0.75em Tahoma,Geneva,"DejaVu Sans Condensed",sans-serif; color: #aaa;}
+#footer img,#bottom img,p img {display: inline;}
+img[border="1"],img[border="2"] {border: 1px solid #000;}
+
+       /* -- Text -- */
+blockquote {position: relative; margin: 1em 0; padding: 0 0 0 57px; background: url("../img/bg_quote.png") 0 0 no-repeat; quotes: none; border: none;}
+blockquote:before, blockquote:after {content: ''; content: none;}
+blockquote q {display: block; text-align: justify; margin: 10px 0 0 0;}
+html:lang(ru) q,html:lang(ua) q, html body q[lang="ru"], html body q[lang="ua"] {quotes: none;}
+blockquote cite {font-style: normal; color: #3662a3;}
+blockquote  var.date {position: absolute; top: 0; right: 0; font-size: 11px; color: #6a6a6a;}
+blockquote  dfn.rating {display: block; position: relative; margin: 5px 0 0; padding: 0 0 0 83px; height: 12px; overflow: hidden; line-height: 1; text-transform: lowercase; background: url("../img/bg_ratings.png") 0 0 no-repeat; color: #cacaca; font-size: 12px;}
+blockquote dfn.rating span {display: block; position: absolute; top: 0; left: 0; height: 12px; width: 0; background: url("../img/bg_ratings.png") 0 -12px no-repeat;}
+blockquote dfn.r1 span {width: 15px;}
+blockquote dfn.r2 span {width: 30px;}
+blockquote dfn.r3 span {width: 45px;}
+blockquote dfn.r4 span {width: 60px;}
+blockquote dfn.r5 span {width: 75px;}
+
+small {font-size: 85%;}
+big   {font-size: 125%;}
+sup   {vertical-align: text-top; font-size: 65%;}
+sub   {vertical-align: text-bottom; font-size: 65%;}
+ins   {text-decoration: underline;}
+del   {text-decoration: line-through;}
+pre   {white-space: pre; overflow: auto; padding: 10px; background: #F6F6F6; border: 1px solid #E5E5E5; }
+
+abbr {text-transform: uppercase; text-decoration: none;}
+acronym {font-variant: small-caps; text-transform: none; text-decoration: none;}
+abbr[title],acronym[title],dfn[title] {cursor: help; border-bottom: 1px dotted #f0f0f0;}
+
+.mobile,#mobile-nav {display: none;}
+.wai {position: absolute; visibility: hidden;}
+.fl {float: left; margin: 0 5px 5px 0;}
+.fr {float: right; margin: 0 0px 5px 5px;}
+
+/*======= -- OUR BLOCK's & STYLES ! -- =======*/
+
+/*************** Fonts ***************/
+html {font-size: 75%}
+@media all and (min-resolution: 120dpi) {
+    html {font-size: 60%}
+    html, x:-moz-any-link {font-size: 75%}
+}
+    #for-opera927 {/* dont' remove! */}
+
+body,input,textarea {color: #585858; font: normal 1em/1.4  "Trebuchet MS","Bitstream Vera Sans","DejaVu Sans","Liberation Sans",Geneva,sans-serif;}
+code,pre {color: #c33; font: normal 1em/1.4 "Consolas","Lucida Console", Monaco, "Courier New", Courier, FreeMono,"Nimbus Mono L","Liberation Mono",monospace;}
+
+h1,h2,h3,h4,h5,h6 {margin: 1em 0;}
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child {margin-top: 0 !important;}
+h1 {font: normal 36px "Trebuchet MS"; color: #f3ae00;}
+h2 {font: normal 32px "Trebuchet MS"; color: #f3ae00;}
+h3 {font: normal 28px "Trebuchet MS"; color: #f3ae00;}
+h4 {font: normal 24px "Trebuchet MS"; color: #f3ae00;}
+h5 {font: normal 21px "Trebuchet MS"; text-transform: uppercase; color: #f3ae00;}
+h5.v2 {color: #585858}
+h5.v3 {color: #7695c2}
+h6 {font: normal 17px "Trebuchet MS"; text-transform: uppercase; color: #f3ae00;}
+h6.v2 {color: #585858}
+h6.v3 {color: #7695c2}
+
+a         {color: #cd9710; text-decoration: underline;}
+/*a:visited {color: #99c;}*/
+a:hover, a:active, a:focus {text-decoration: none;}
+
+/*************** Positioning ***************/
+body {background: #f1f1f1 url("../img/bg_body.png") center 0 repeat-x}
+#wrapper {width: 980px; margin: 0 auto; padding: 376px 0 0; position: relative;}
+
+       /* -- Mainframes -- */
+#header     {position: absolute; top: 0; left: 0; width: 980px; height: 376px; background: url("../img/bg_header.png") right bottom no-repeat;}
+  #header.n_energo     {background-image: url("../img/bg_header.png");}
+  #header.n_info       {background-image: url("../img/bg_h_info.jpg");}
+  #header.n_forum      {background-image: url("../img/bg_h_forum.jpg");}
+  #header.n_shop       {background-image: url("../img/bg_h_cart.jpg");}
+  #header.n_faq        {background-image: url("../img/bg_h_faq.jpg");}
+  #header.n_contact    {background-image: url("../img/bg_h_contact.jpg");}
+#content    {position: relative; overflow: hidden; padding: 45px 40px 31px; background: #fff url("../img/bg_content.png") 0 0 no-repeat;}
+  #content-text {float: right; width: 600px; font-size: 1.166em; text-align: justify;}
+#sidebar    {float: left; width: 250px;}
+#footer     {}
+#bottom     {}
+
+/*  -- Header --  */
+/*  logo */
+#logo {z-index: 100; display:block; position: absolute; top: 93px; left: 0; width: 270px; height: 112px; font: bold 15px Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif; color: #000; text-align: center; text-transform: uppercase; margin: 0; padding: 0; background: none; border: none;}
+#logo a,#logo span {display: block; position: absolute; top: 0px; left: 0; width: 100%; height: 100%; background: url("../img/logo.png") no-repeat; text-indent: -900em; outline: none;}
+#logo dfn {display: block; color: #f3ae00}
+/* /logo */
+
+/* menu  */
+ul#nav {margin: 0; padding: 0; width: 596px; position: absolute; top: 190px; right: 68px; z-index: 10; font: normal 1.166em Arial; height: 33px;}
+  ul#nav li {float: left; margin: 0; padding: 0; background: none;}
+    ul#nav li a {display: block; margin: 0; padding: 0; background: none; color: #000; height: 33px; width: 100%; text-align: center; line-height: 33px; text-decoration: none;}
+    ul#nav li a:hover,ul#nav li.sel a {background: url("../img/bg_nav.png") 0 0 no-repeat}
+
+    ul#nav li#n_energo {width: 150px;}
+    ul#nav li#n_energo a:hover,ul#nav li#n_energo.sel a {background-position: 0 0}
+    ul#nav li#n_info {width: 120px;}
+    ul#nav li#n_info a:hover,ul#nav li#n_info.sel a {background-position: -150px 0}
+    ul#nav li#n_forum {width: 78px;}
+    ul#nav li#n_forum a:hover,ul#nav li#n_forum.sel a {background-position: -270px 0}
+    ul#nav li#n_shop {width: 90px;}
+    ul#nav li#n_shop a:hover,ul#nav li#n_shop.sel a {background-position: -348px 0}
+    ul#nav li#n_shop {width: 90px;}
+    ul#nav li#n_shop a:hover,ul#nav li#n_shop.sel a {background-position: -348px 0}
+    ul#nav li#n_faq {width: 62px;}
+    ul#nav li#n_faq a:hover,ul#nav li#n_faq.sel a {background-position: -438px 0}
+    ul#nav li#n_contact {width: 96px;}
+    ul#nav li#n_contact a:hover,ul#nav li#n_contact.sel a {background-position: -500px 0}
+
+ul#nav li ul {display: none; position: absolute; height: 33px; background: url("../img/bg_nav_nav.png") right 0 no-repeat; font-family: "Trebuchet MS;"}
+ul#nav li:hover ul,ul#nav li.hover ul,ul#nav li.sel ul {display: block;}
+  ul#nav li ul li {height: 33px; padding: 0 15px; background: url("../img/bg_nav_nav_li.png") 0 center no-repeat}
+  ul#nav li ul li:first-child,ul#nav li ul li.first-child {background: url("../img/bg_nav_nav.png") 0 0 no-repeat;}
+    ul#nav li ul li a{color: #5a5454;}
+    ul#nav li ul li a:hover,ul#nav li.sel ul li a {background: none;}
+    ul#nav li ul li a:hover {color: #f0b521}
+/* /menu */
+
+#header div.search {position: absolute; top: 93px; right: 0; width: 690px; height: 130px; background: url("../img/bg_search.jpg") 0 0 no-repeat}
+  #header div.search #adv3 {position: absolute; top: 20px; left: 23px;}
+  #header div.search form.search-form {}
+    #header div.search form.search-form fieldset {margin: 0; padding: 0; border: none;}
+      #header div.search form.search-form fieldset input#srch {display: block; position: absolute; top: 37px; right: 48px; width: 125px; height: 26px; padding: 0 0 0 8px; margin: 0; border: none; outline: none; background: url("../img/bg_search_input.png") 0 0 no-repeat; color: #000;}
+      #header div.search form.search-form fieldset input#srch.filled {background-position: 0 -26px;}
+      #header div.search form.search-form fieldset input#btn_srch {display: block; position: absolute; top: 37px; right: 14px; width: 30px; height: 33px; padding: 0 0 0 8px; margin: 0; border: none; outline: none; background: url("../img/bg_search_btn.png") 0 0 no-repeat; color: #000; text-indent: -999em; color: #f2f2f2; font-size: 0.00001px; cursor: pointer;}
+
+#header span.tel {position: absolute; top: 15px; left: 276px; font: normal 23px Georgia; color: #fff; padding: 2px 0 3px 28px; background: url("../img/ico_phone.png") 0 0 no-repeat}
+
+#header ul.mini_nav {margin: 0; position: absolute; top: 18px; left: 13px;}
+  #header ul.mini_nav li {float: left; width: 30px; height: 30px; padding: 0; background: none; margin: 0 10px 0 0}
+    #header ul.mini_nav li a {display: block; width: 30px; height: 30px;text-indent: -999em; background: url("../img/ico_mini_nav.png") 0 0 no-repeat;}
+    #header ul.mini_nav li.cart a {background-position: 0 0;}
+    #header ul.mini_nav li.cart a:hover {background-position: 0 -30px;}
+    #header ul.mini_nav li.site-map a {background-position: -40px 0;}
+    #header ul.mini_nav li.site-map a:hover {background-position: -40px -30px;}
+    #header ul.mini_nav li.contact a {background-position: -80px 0;}
+    #header ul.mini_nav li.contact a:hover {background-position: -80px -30px;}
+
+#header form.login-form {position: absolute; right: 16px; top: 13px; font-size: 1.083em;}
+  #header form.login-form fieldset {margin: 0; padding: 0 0 0 31px; background: url("../img/ico_login.png") 0 center no-repeat; border: none;}
+  #header form.login-form fieldset input#username {margin: 0 7px 0 0; padding: 0 0 0 10px; border: none; width: 123px; height: 26px; outline: none; background: url("../img/bg_login_input.png") 0 0 no-repeat}
+  #header form.login-form fieldset input#username.filled {background-position: 0 -26px;}
+  #header form.login-form fieldset input#pass {margin: 0 7px 0 0; padding: 0 0 0 10px; border: none; width: 123px; height: 26px; outline: none; background: url("../img/bg_pass_input.png") 0 0 no-repeat}
+  #header form.login-form fieldset input#pass.filled {background-position: 0 -26px;}
+
+  #header form.login-form fieldset input#btn_login {width: 26px; height: 26px; padding: 0; margin: 0; border: none; outline: none; background: url("../img/bg_btn_login.png") 0 0 no-repeat; color: #000; text-indent: -999em; color: #f2f2f2; font-size: 0.00001px; cursor: pointer;}
+
+  #header form.login-form fieldset ul {margin: 4px 0 0; font: normal 10px Tahoma;}
+    #header form.login-form fieldset ul li {float: left; margin: 0 86px 0 0; padding: 0; background: none}
+      #header form.login-form fieldset ul li a {color: #fff;}
+  #header form.login-form fieldset ul.login li {color: #fff;font: normal 12px Tahoma;}
+
+#header div.cart-block {position: absolute; left: 0; bottom: 10px; padding: 19px 0 0 110px; width: 163px; height: 103px; background: url("../img/bg_cart_block.jpg") 0 0 no-repeat; font-size: 1.166em;}
+  #header div.cart-block h2 {font: bold 17px/1 "Trebuchet MS"; color: #fff; margin-bottom: 5px; text-transform: uppercase;}
+  #header div.cart-block dl {margin: 0; padding: 0; overflow: hidden;}
+    #header div.cart-block dl dt {float: left; clear: left; width: 73px; margin: 0; font-weight: bold; color: #000}
+    #header div.cart-block dl dd {margin: 0; color: #464646;}
+
+    #header div.cart-block a.btn_offer {position: absolute; bottom: 15px; right: 56px; display: block; width: 106px; height: 19px;}
+      #header div.cart-block a.btn_offer span{position: absolute; bottom: 0; right: 0; display: block; width: 106px; height: 19px; cursor: pointer; background: url("../img/bg_btn_offer.png") 0 0 no-repeat}
+/* /-- Header -- */
+
+/* -- Footer --  */
+#footer {position: relative; padding: 14px 0 0; height: 120px; background: #f3ae00 url("../img/bg_footer.png") 0 0 no-repeat; font-size: 1em; color: #000; text-shadow: #000 0 0;}
+#footer hr  {display: none;}
+  ul#subnav {margin: 0; padding: 0; position: absolute; top: 61px; right: 25px;}
+    ul#subnav li {margin: 0; padding: 0 14px; background: none; display: inline; border-left: 1px solid #000; line-height: 1;}
+    ul#subnav li:first-child,ul#subnav li.first-child {padding-left: 0; border: none}
+      ul#subnav li a {color: #000; text-decoration: none;}
+      ul#subnav li a:hover,ul#subnav li a:focus {color: #fff; text-decoration: underline;}
+
+#footer div.partners {position: absolute; top: 30px; left: 40px;}
+  #footer div.partners h2 {font: normal 23px/1 "Trebuchet MS"; color: #000; margin-bottom: 0;}
+  #footer div.partners ul {margin: 0; overflow: hidden;}
+    #footer div.partners ul li {margin: 0; float: left; padding: 0; background: none;}
+      #footer div.partners ul li a {display: block; height: 51px; position: relative;}
+        #footer div.partners ul li a span {display: block; height: 51px; width: 100%; position: absolute; top: 0; left: 0; background: url("../img/bg_partner.png") 0 0 no-repeat}
+    #footer div.partners ul li.texinfo a {width: 120px; margin-right: 22px;}
+      #footer div.partners ul li.texinfo a span {background-position: 0 0;}
+    #footer div.partners ul li.techhome a {width: 142px; margin-right: 23px;}
+      #footer div.partners ul li.techhome a span {background-position: -142px 0;}
+    #footer div.partners ul li.somecompany a {width: 50px; margin-right: 0px;}
+      #footer div.partners ul li.somecompany a span {background-position: -307px 0;}
+/* contacts  */
+address.vcard {font-style: normal; position: absolute; top: 81px; right: 40px;}
+address.vcard a.fn {cursor: default; text-decoration: none; color: #000;}
+address.vcard .adr {display: block;}
+address.vcard .country-name,.geo {position: absolute; visibility: hidden;}
+address.vcard a.hcard-download {}
+/* /contacts */
+/* /-- Footer -- */
+
+/* -- Bottom --  */
+#bottom {font-size: 0.846em; color: #6b6b6b; text-align: center;}
+#bottom a {color: #9c9c9c;}
+/* /-- Bottom -- */
+/* ^^^^^^^^^^^ Sidebar style's ^^^^^^^^^^^ */
+
+/* ^^^^^^^^^^^ Content style's ^^^^^^^^^^^ */
+#content table,#content object,#content embed {clear: both;}
+
+body.index #content-text h2 {margin-bottom: 20px; font: normal 2.57em "Trebuchet MS"; color: #f3ae00;}
+
+#content-text .big_ill {display: block; float: left; padding: 0 19px 16px 7px; margin: 0 21px 15px 0; background: url("../img/bg_frame-big-ill.png") 0 bottom no-repeat}
+  #content-text .big_ill img {width: 226px; display: block; border-top: 7px solid #eaeaea;}
+
+#adv1 {width: 500px; margin: 40px auto;}
+
+div.media-adv {padding: 9px 4px; overflow: hidden; background: #f1f1f1; border: 1px solid #e6e5e5; -moz-border-radius: 10px;   -webkit-border-radius: 10px;   -khtml-border-radius: 10px;   border-radius: 10px; font-size: 0.857em;}
+  div.media-adv div.masadv {float: left;  min-height: 357px; width: 250px; padding: 15px 19px 0; background: #fff; border: 1px solid #dfdfdf; -moz-border-radius: 10px;   -webkit-border-radius: 10px;   -khtml-border-radius: 10px;   border-radius: 10px; color: #000;}
+    body.index #content-text div.media-adv div.masadv h2 {font: normal 1.5em "Trebuchet MS"; color: #000; margin-bottom: 16px; padding: 2px 0 3px 41px; background: url("../img/ico_rupor.png") 0 0 no-repeat}
+    div.media-adv div.masadv ul {margin: 0;}
+      div.media-adv div.masadv ul li {margin: 0 0 20px; padding: 0; background: none;}
+      div.media-adv div.masadv ul li div.date {margin: 2px 0;}
+        div.media-adv div.masadv ul li div.date var {font-size: 11px; background: #797979; color: #fff; line-height: 1; padding: 0 3px;}
+      div.media-adv div.masadv ul li div.name {margin: 2px 0;color: #3662a3}
+        div.media-adv div.masadv ul li div.name a {color: #3662a3; text-decoration: none;}
+      div.media-adv div.masadv ul li div.tel {margin: 2px 0; color: #767676;}
+
+  div.media-adv div.last-msg {float: right; width: 250px; padding: 15px 19px 0; background: #fff; border: 1px solid #dfdfdf; -moz-border-radius: 10px;   -webkit-border-radius: 10px;   -khtml-border-radius: 10px;   border-radius: 10px; color: #000;}
+    body.index #content-text div.media-adv div.last-msg h2 {font: normal 1.5em "Trebuchet MS"; color: #000; margin-bottom: 16px; padding: 2px 0 3px 41px; background: url("../img/ico_forum.png") 0 0 no-repeat; text-align: left;}
+    div.media-adv div.last-msg ul {margin: 0;}
+      div.media-adv div.last-msg ul li {margin: 0 0 20px; padding: 0; background: none;}
+      div.media-adv div.last-msg ul li div.date {margin: 2px 0;}
+        div.media-adv div.last-msg ul li div.date var {font-size: 11px; background: #797979; color: #fff; line-height: 1; padding: 0 3px;}
+      div.media-adv div.last-msg ul li div.name {margin: 2px 0;color: #3662a3}
+        div.media-adv div.last-msg ul li div.name a {color: #3662a3; text-decoration: none;}
+      div.media-adv div.last-msg ul li div.answers {margin: 2px 0; color: #767676;}
+
+
+#sidebar h2 {font: normal 2.166em "Trebuchet MS"}
+
+  #sidebar div.news h2 {margin-bottom: 30px;}
+  #sidebar div.news ul.news {margin: 0;}
+    #sidebar div.news ul.news li {position: relative; overflow: hidden; margin: 0 0 15px; padding: 0; background:  none; color: #000;}
+
+#sidebar div.news ul.news li .ill-news {display: block; float: left; padding: 0 15px 10px 3px; margin: 0 3px 5px 0; background: url("../img/bg_frame-small-ill.png") 0 bottom no-repeat}
+  #sidebar div.news ul.news li .ill-news img {width: 56px; display: block; border-top: 3px solid #eaeaea;}
+
+#sidebar div.news ul.news li var.date {display: block; color: #7b7b7b; margin-bottom: 0px;}
+  #sidebar div.news ul.news li p { margin: 0 0 3px;}
+  #sidebar div.news ul.news li a.more {float: right; padding: 0 0 0 12px; background: url("../img/bull_more.png") 0 6px no-repeat; color: #4972ae; font-size: 11px;}
+
+
+#adv2 {margin: 30px 0;}
+
+#sidebar div.vote {margin: 30px 0;}
+  #sidebar div.vote h2 {margin: 0; padding: 15px 25px 0 25px; font: normal 1em "Trebuchet MS"; color: #fff; text-transform: uppercase; background: #3f6a9e url("../img/bg_vote.png") 0 0 no-repeat}
+  #sidebar div.vote form.vote-form {padding: 35px 0 0 0; background: url("../img/bg_vote_bottom.png") 0 0 no-repeat}
+    #sidebar div.vote form.vote-form fieldset {margin: 0; padding: 0; border: none;}
+    #sidebar div.vote form.vote-form fieldset.btn_wrapper {overflow: hidden; margin: 14px 0 0;}
+      #sidebar div.vote form.vote-form fieldset input {margin: 5px 3px 5px 0; padding: 0; border: none;}
+      #sidebar div.vote form.vote-form fieldset label {font-size: 1.083em;}
+      #sidebar div.vote form.vote-form fieldset label.active {color: #3662a3}
+      #sidebar div.vote form.vote-form fieldset input#btn_submit {margin: 0 10px 0 0; padding: 0; width: 106px; height: 19px; color: #fff; font-size: 0.0001px; text-indent: -999em; background: url("../img/btns.png") 0 0 no-repeat; cursor: pointer;}
+      #sidebar div.vote form.vote-form fieldset a.result {padding: 0 0 0 17px; background: url("../img/ico_result.png") 0 3px no-repeat; color: #cd9710;}
+
+
+#sidebar div.testimonials {padding: 15px 19px; border: 1px dashed #b0b0b0;}
+  #sidebar div.testimonials h2 {font: normal 1.916em/1 "Trebuchet MS"; margin: 0 0 12px; padding: 0 0 0 20px; color: #000; background: url("../img/ico_testimonials.png") 0 7px no-repeat;}
+  #sidebar div.testimonials ul {margin: 0;}
+    #sidebar div.testimonials ul li {margin: 0; padding: 0; background: none; position: relative; color: #000;}
+      #sidebar div.testimonials ul li span.name {color: #3662a3;}
+      #sidebar div.testimonials ul li var.date {position: absolute; top: 0; right: 0; font-size: 11px; color: #6a6a6a;}
+      #sidebar div.testimonials ul li dfn.rating {display: block; position: relative; margin: 5px 0 0; padding: 0 0 0 83px; height: 12px; overflow: hidden; line-height: 1; text-transform: lowercase; background: url("../img/bg_ratings.png") 0 0 no-repeat; color: #cacaca;}
+        #sidebar div.testimonials ul li dfn.rating span {display: block; position: absolute; top: 0; left: 0; height: 12px; width: 0; background: url("../img/bg_ratings.png") 0 -12px no-repeat;}
+        #sidebar div.testimonials ul li dfn.r1 span {width: 15px;}
+        #sidebar div.testimonials ul li dfn.r2 span {width: 30px;}
+        #sidebar div.testimonials ul li dfn.r3 span {width: 45px;}
+        #sidebar div.testimonials ul li dfn.r4 span {width: 60px;}
+        #sidebar div.testimonials ul li dfn.r5 span {width: 75px;}
+        #sidebar div.testimonials ul li p a  {color: #4972ae}
+
+/*form*/
+form.contact-form {}
+  form.contact-form fieldset {margin: 0; padding: 0; border: none; overflow: hidden;}
+    form.contact-form fieldset fieldset.left {float: left; width: 270px;}
+    form.contact-form fieldset fieldset.right {float: right; width: 270px;}
+    form.contact-form fieldset label {}
+    form.contact-form fieldset input {width: 260px; margin: 3px 0 5px;}
+    form.contact-form fieldset textarea {width: 590px; height: 100px; margin: 3px 0 5px;}
+    form.contact-form fieldset fieldset.captcha {float: left; width: 395px;}
+      form.contact-form fieldset fieldset.captcha img {display: inline; margin: 0 14px;}
+      form.contact-form fieldset fieldset.captcha span {float: left; display: block; padding-top: 5px;}
+      form.contact-form fieldset fieldset.captcha input {width: 87px;}
+
+    form.contact-form fieldset fieldset.btn_wrapper {float: right; width: 173px; margin-top: 21px;}
+      form.contact-form fieldset fieldset.btn_wrapper input#btn_reset {margin: 0 0px 0 0; float: left; border: none; padding: 0; width: 80px; height: 19px; color: #fff; font-size: 0.0001px; text-indent: -999em; background: url("../img/btns.png") 0 -19px no-repeat; cursor: pointer;}
+      form.contact-form fieldset fieldset.btn_wrapper input#btn_order {margin: 0 0px 0 0; float: right; border: none; padding: 0; width: 80px; height: 19px; color: #fff; font-size: 0.0001px; text-indent: -999em; background: url("../img/btns.png") 0 -38px no-repeat; cursor: pointer;}
+
+
+/*side nav*/
+#sidebar ul#sidenav {margin: 0 0 1em; font-size: 1.166em;}
+  #sidebar ul#sidenav li {margin: 0 0 5px; padding: 0 0 5px 0; border-bottom: 1px solid #e0dfdf; background: none;}
+    #sidebar ul#sidenav li a {color: #000; padding: 0 0 0 20px; background: url("../img/bull_sidenav.png") 0 2px no-repeat; text-decoration: none;}
+    #sidebar ul#sidenav li a:hover,#sidebar ul#sidenav li a:focus {background-position: -387px 2px; color: #f3ae00}
+
+    #sidebar ul#sidenav li ul {margin: 5px 0 0px 20px; padding: 0 0 0px 0;}
+      #sidebar ul#sidenav li ul li {margin: 0 0 3px 0px; padding: 0; border: none}
+        #sidebar ul#sidenav li ul li a {padding: 0 0 0 12px; color: #5a5454; background:  url("../img/bull_sidenav_li.png") 0 7px no-repeat}
+        #sidebar ul#sidenav li ul li a:hover,#sidebar ul#sidenav li ul li a:focus {color: #f0b521; background-position: -395px 7px}
+
+  div#sidebar div.masadv {width: 210px; margin: 30px 0; padding: 15px 19px 0; background: #fff; border: 1px solid #dfdfdf; -moz-border-radius: 10px;   -webkit-border-radius: 10px;   -khtml-border-radius: 10px;   border-radius: 10px; color: #000;}
+    div#sidebar div.masadv h2 {font: normal 1.5em "Trebuchet MS"; color: #000; margin-bottom: 16px; padding: 2px 0 3px 41px; background: url("../img/ico_rupor.png") 0 0 no-repeat}
+    div#sidebar div.masadv ul {margin: 0;}
+      div#sidebar div.masadv ul li {margin: 0 0 20px; padding: 0; background: none;}
+      div#sidebar div.masadv ul li div.date {margin: 2px 0;}
+        div#sidebar div.masadv ul li div.date var {font-size: 11px; background: #797979; color: #fff; line-height: 1; padding: 0 3px;}
+      div#sidebar div.masadv ul li div.name {margin: 2px 0;color: #3662a3}
+        div#sidebar div.masadv ul li div.name a {color: #3662a3; text-decoration: none;}
+      div#sidebar div.masadv ul li div.tel {margin: 2px 0; color: #767676;}
+
+  div#sidebar div.last-msg {width: 210px; margin: 30px 0; padding: 15px 19px 0; background: #fff; border: 1px solid #dfdfdf; -moz-border-radius: 10px;   -webkit-border-radius: 10px;   -khtml-border-radius: 10px;   border-radius: 10px; color: #000;}
+    div#sidebar div.last-msg h2 {font: normal 1.5em "Trebuchet MS"; color: #000; margin-bottom: 16px; padding: 2px 0 3px 41px; background: url("../img/ico_forum.png") 0 0 no-repeat; text-align: left;}
+    div#sidebar div.last-msg ul {margin: 0;}
+      div#sidebar div.last-msg ul li {margin: 0 0 20px; padding: 0; background: none;}
+      div#sidebar div.last-msg ul li div.date {margin: 2px 0;}
+        div#sidebar div.last-msg ul li div.date var {font-size: 11px; background: #797979; color: #fff; line-height: 1; padding: 0 3px;}
+      div#sidebar div.last-msg ul li div.name {margin: 2px 0;color: #3662a3}
+        div#sidebar div.last-msg ul li div.name a {color: #3662a3; text-decoration: none;}
+      div#sidebar div.last-msg ul li div.answers {margin: 2px 0; color: #767676;}
+
+
+/*shopping cart*/
+#content h1 {margin: 20px 0;}
+ul.bread_crumb {margin: 0; padding: 0 0 5px; border-bottom: 1px solid #c5c5c5}
+  ul.bread_crumb li {margin: 0 10px 0 0; padding: 0; display: inline; background: none;}
+    ul.bread_crumb a {color: #f3ae00; padding: 0 16px 0 0; background: url("../img/bull_crumb.png") right 7px no-repeat;}
+
+#content table.cart {margin-top: 0; font-size: 13px;}
+  #content table.cart td {vertical-align: middle;}
+    #content table.cart td a.btn_delete {display: block; width: 30px; height: 28px; text-indent: -999em; background: url("../img/bg_delete.png") 0 0 no-repeat; margin: 0 auto;}
+    #content table.cart tr.nth-child td a.btn_delete {background-position: 0 -28px;}
+  #content table.cart th.price {padding: 0; width: 80px;}
+  #content table.cart td img {border: 1px solid #c7c7c7}
+  #content table.cart td input.qty {width: 36px;}
+  #content table.cart tfoot td {background: #e3ac16; font: bold 15px "Trebuchet MS"; color: #fff; border: none}
+
+    form.contact-form fieldset.btn_control {overflow: hidden; margin: 5px 0 55px;}
+      form.contact-form fieldset.btn_control input#btn_continue {margin: 0 0px 0 0; float: right; border: none; padding: 0; width: 146px; height: 19px; color: #fff; font-size: 0.0001px; text-indent: -999em; background: url("../img/btns.png") 0 -57px no-repeat; cursor: pointer;}
+      form.contact-form fieldset.btn_control input#btn_recal {margin: 0 18px 0 0; float: right; border: none; padding: 0; width: 106px; height: 19px; color: #fff; font-size: 0.0001px; text-indent: -999em; background: url("../img/btns.png") 0 -76px no-repeat; cursor: pointer;}
+
+
+/*shop*/
+div.shop_block {position: relative; overflow: hidden; margin: 20px 0; padding: 0 0 15px; border-bottom: 1px solid #c5c5c5; font-size: 0.929em;}
+  div.shop_block div.prod_ill {float: left; margin: 0px 9px 5px 0;}
+    div.shop_block div.prod_ill a.ill {display: block; width: 186px; padding: 0 18px 17px 7px; background: url("../img/bg_frame-shop-ill.png") 0 bottom no-repeat;}
+      div.shop_block div.prod_ill a.ill img {border-top:7px solid #EAEAEA; width: 186px; display: block;}
+
+  div.shop_block dl.prod-param {float: left; margin: 0 0 5px; width: 380px;}
+    div.shop_block dl.prod-param dt {margin: 0; width: 218px; color: #000;}
+    div.shop_block dl.prod-param dd {margin: -18px 0 4px 0; padding: 0 0 0 218px;}
+
+
+  div.shop_block div.prod-review {clear: both; margin: 5px 0;}
+    div.shop_block div.prod-review h2 {font: normal 1em/1 "Trebuchet MS"; color: #000; margin: 0;}
+    div.shop_block div.prod-review p {margin: 7px 0;}
+
+
+  div.shop_block ul.prod-opt {margin: 11px 0 0;}
+    div.shop_block ul.prod-opt li {margin: 0; padding: 0; float: left; background: none;}
+      div.shop_block ul.prod-opt li.price var {font-size: 1.23em; color: #fff; background: #4972ae; padding: 0 5px;}
+
+    div.shop_block ul.prod-opt li.buy {float: right;}
+      div.shop_block ul.prod-opt li.buy a {display: block; position: relative; width: 106px; height: 19px;}
+        div.shop_block ul.prod-opt li.buy a span {display: block; position: absolute; top: 0; left: 0; width: 106px; height: 19px; background: url("../img/btns.png") 0 -95px no-repeat; cursor: pointer;}
+
+/*Pager*/
+ul.pager {margin: 34px 0 10px; text-align: center; font: bold 18px/30px "Trebuchet MS"; color: #585858;}
+  ul.pager li {display: inline-block; margin: 0; width: 29px; height: 30px; padding: 0; background: none;}
+  ul.pager li.sel {width: 29px; background: #ebbb0f url("../img/bg_pager.png") 0 0 no-repeat; color: #fff}
+    ul.pager li a {color: #585858; text-decoration: none;}
+    ul.pager li a:hover,ul.pager li a:focus {text-decoration: underline;}
+    ul.pager li.prev-page a {display: inline-block; position: relative; width: 19px; height: 20px;}
+      ul.pager li.prev-page a span {display: block; position: absolute; top: 3px; left: 0; width: 19px; height: 20px; background: url("../img/bg_pager.png") 0 -30px no-repeat; cursor: pointer;}
+    ul.pager li.next-page a {display: inline-block; position: relative; width: 19px; height: 20px;}
+      ul.pager li.next-page a span {display: block; position: absolute; top: 3px; left: 0; width: 19px; height: 20px; background: url("../img/bg_pager.png") -19px -30px no-repeat; cursor: pointer;}
+/*-----*/
+
+/*shop inner*/
+  div.inner_block {border: none;}
+  div.inner_block div.prod_ill {float: left; margin: 0px 1px 5px 0;}
+    div.inner_block div.prod_ill a.ill {display: block; width: 356px; padding: 0 19px 17px 7px; background: url("../img/bg_frame-shop-big-ill.png") 0 bottom no-repeat;}
+      div.inner_block div.prod_ill a.ill img {border-top:7px solid #EAEAEA; width: 356px; display: block;}
+  div.inner_block div.prod_ill ul.thumb {margin: 0;}
+    div.inner_block div.prod_ill ul.thumb li {margin: 0; padding: 0; float: left; background: none;}
+      div.inner_block div.prod_ill ul.thumb li a.ill {display: block; width: 79px; padding: 0 13px 11px 3px; background: url("../img/bg_frame-shop-small-ill.png") 0 bottom no-repeat;}
+        div.inner_block div.prod_ill ul.thumb li a.ill img {border-top: 3px solid #EAEAEA; width: 79px; display: block;}
+
+  div.inner_block dl.prod-param {float: left; margin: 0 0 5px; width: 210px;}
+    div.inner_block dl.prod-param dt {margin: 0; width: 210px; color: #000;}
+    div.inner_block dl.prod-param dd {margin: 0px 0 0px 0; padding: 0 0 0 0px;}
+
+div.inner_block a.forum_link {padding: 0 0 2px 22px; background: url("../img/ico_forum_small.png") 0 4px no-repeat; color: #7695c2;}
+
+/*light gallery 1.3*/
+#LG_container{border: 1px solid #aaa; visibility:hidden; position:absolute; top:0px; left:0px; padding:2px; z-index:200; opacity:1; background-color:#fff; background-position:center; background-repeat:no-repeat; font: normal 12px verdana, arial, sans-serif;}
+#LG_loading {background: url("../img/lightgallery/ico-loading.gif") no-repeat center; display: none; position: absolute; width: 40px; height: 40px; top: 50%; left: 50%; margin: -20px 0 0 -20px;}
+#LG_panel {padding: 1px 0}
+#LG_prevLink,#LG_nextLink{width:20px; height:20px; cursor:pointer; position:absolute; top:24px; opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";}
+#LG_prevLink{left:0; background:url("../img/lightgallery/prev.gif") no-repeat left 40px;}
+#LG_nextLink{right:0; background:url("../img/lightgallery/next.gif") no-repeat right 40px;}
+#LG_imgIndex{float:left; margin-left:16px; color:#777; height:20px; line-height:20px;}
+#LG_titleBar{color:#555; height:30px; line-height:30px; overflow:hidden; text-align:center;}
+#LG_overlay{position:absolute; top:0; left:0; z-index:100; width:100% !important; height:100%; display:none; opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";}
+#LG_pic{display:none;margin:0 auto}
+#LG_zoomIn, #LG_zoomOut, #LG_zoomNormal, #LG_fitScreen, #LG_zoom_disabled{width:20px; height:20px;margin:1px; float:left; cursor:pointer; display:block;}
+#LG_zoom_disabled {display:none;}
+#LG_zoomIn{background:url("../img/lightgallery/sprite.gif") no-repeat 0 0px}
+#LG_zoomIn:hover{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -40px}
+
+#LG_zoomNormal{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -80px}
+#LG_zoomNormal:hover{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -120px}
+
+#LG_zoomOut{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -160px}
+#LG_zoomOut:hover{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -200px}
+
+#LG_fitScreen{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -320px}
+
+#LG_closeBtn{float:right; background:url("../img/lightgallery/sprite.gif") no-repeat 0 -240px; width:22px; height:22px; cursor:pointer;}
+#LG_closeBtn:hover{background:url("../img/lightgallery/sprite.gif") no-repeat 0 -280px;}

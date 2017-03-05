@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<h2>Новости</h2>
+        <ul class="news">
+            {% if error_new %}
+             <h3>{{error_new}}</h3>
+
+            {% else %}
+            {% for news in news_list%}
+            <li>
+                <a class="ill-news" href="/news/{{news.id}}">
+                          <img alt="новость" src= "{% static "/img/noimage.jpg" %}">
+                        </a>
+            <var class="date">{{news.dateTime}}</var>
+            <p>{{news.title}} </p>
+            <a href="/news/{{news.id}}" class="more">подробней</a>
+          </li>
+
+           {%endfor%}
+
+            {%endif%}
+
+        </ul>

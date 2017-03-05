@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*h1,h2,h3,h4,h5,h6,p {
+  scrollbar-face-color:expression(
+    this.runtimeStyle.scrollbarFaceColor = "#fff",
+    (this.previousSibling==null)?this.runtimeStyle.marginTop = '0':'inherit'
+  );
+}
+
+ul {
+  scrollbar-3dlight-color: expression(
+    this.runtimeStyle.scrollbar3dlightColor = "#fff",
+    this.runtimeStyle.marginTop = ((this.previousSibling && ((this.previousSibling.tagName == "P") || (this.previousSibling.tagName == "OL") )) ? "-0.5em" : "")
+    );
+}*/
+
+input {
+  scrollbar-face-color:expression(
+  this.runtimeStyle.scrollbarFaceColor = "#fff",
+    (this.type=="text")?this.className += ' text':false,
+    (this.type=="password")?this.className += ' password':false,
+    (this.type=="image")?this.className += ' image':false,
+    (this.type=="checkbox")?this.className += ' checkbox':false,
+    (this.type=="radio")?this.className += ' radio':false,
+    (this.type=="button")?this.className += ' button':false,
+    (this.type=="reset")?this.className += ' reset':false,
+    (this.type=="hidden")?this.className += ' hidden':false,
+    (this.type=="email")?this.className += ' email':false,
+    (this.type=="url")?this.className += ' url':false,
+    (this.type=="submit")?this.className += ' submit':false
+  );
+}
+
+/* double-margin */
+#x {display: inline}
+
+/* position: relative */
+#content, #content-text,#sidebar div.testimonials ul li
+ {zoom: 1}
+
+/* overflow: hidden */
+div.media-adv,div.shop_block ul.prod-opt,div.shop_block
+ {zoom: 1}
+
+/* min-height */
+
+/* Layout bugs */
+ul.search-result li {zoom: 1;}
+form.discount-spa-time-finder { width: 357px}
+
+ul#nav li ul li,
+ul#subnav li {
+  scrollbar-face-color:expression(
+  this.runtimeStyle.scrollbarFaceColor = "#fff",
+  this.previousSibling==null ? this.className += ' first-child' : false
+  );
+}
+.login-form {width: 345px; margin-right: -85px; float: left;}
+  .login-form li {white-space: nowrap;}
+ul#nav li ul {width: 600px;}
+  ul#nav li ul li {width: auto; float: left;white-space: nowrap;}
+  ul#nav li ul li a{width: auto; float: left;}
+
+form.contact-form fieldset fieldset.captcha input {width: 83px;}

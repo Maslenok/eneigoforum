@@ -1,0 +1,26 @@
+ <div class="vote">
+       {% if error_answer %}
+       {%else%}
+        <h2>{{question.textQuestion}}</h2>
+        <form class="vote-form" method="post" action="/skipopros/">
+            {% csrf_token %}
+      <div class="message"></div>
+        <input type="hidden" name="opros_submit" value="1">
+            <fieldset>
+
+                {%  for answer in answer_list%}
+
+                <input type="radio" checked="checked" id="answer_arr_{{answer.id}}" name="answer_id_list" value="{{answer.id}}">
+      		<label for="answer_arr_{{answer.id}}">{{answer}}</label>
+      		<br>
+
+                {%endfor %}
+
+                <fieldset class="btn_wrapper">
+              <input type="submit" id="btn_submit" value="Голосовать" title="Голосовать">
+              <a href="/skipopros/" class="result">Результаты</a>
+            </fieldset>
+ 			</fieldset>
+			</form>
+         {%endif%}
+ </div>
