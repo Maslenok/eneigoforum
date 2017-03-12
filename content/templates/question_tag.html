@@ -1,5 +1,6 @@
  <div class="vote">
        {% if error_answer %}
+       {{error_answer}}
        {%else%}
         <h2>{{question.textQuestion}}</h2>
         <form class="vote-form" method="post" action="/skipopros/">
@@ -10,8 +11,8 @@
 
                 {%  for answer in answer_list%}
 
-                <input type="radio" checked="checked" id="answer_arr_{{answer.id}}" name="answer_id_list" value="{{answer.id}}">
-      		<label for="answer_arr_{{answer.id}}">{{answer}}</label>
+                <input type="radio" checked="checked" id="{{answer.id}}" name="cash" value="{{answer.id}}">
+      		<label for="{{answer.id}}">{{answer}}</label>
       		<br>
 
                 {%endfor %}

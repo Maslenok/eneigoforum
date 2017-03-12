@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from staticpages.views import index,energotechnology,skipopros
+
+from content.views import skipopros,testimonials
+from staticpages.views import index,energotechnology
 from django.conf.urls.static import static
 from django.conf import settings
 from energoforum import settings
@@ -25,6 +27,7 @@ urlpatterns = [
     url(r'^energotechnology/$', energotechnology),
     url(r'^skipopros/$', skipopros),
     url(r'^news/', skipopros),
-    url (r'^ckeditor/', include('ckeditor.urls')),
+    url(r'^testimonials/', testimonials),
+    url (r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^', index),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

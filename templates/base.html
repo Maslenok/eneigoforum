@@ -273,21 +273,12 @@ function DoWin(namehtm,wwin,hwin) {
 
 <div id="wrapper">
   <div id="logo"><dfn>Энерго</dfn>Форум <a href="/">(на главную)</a></div>
-  <div id="content">      <div id="content-text">
-            <h1>Информация </h1>
-            <div><strong>Частное научно-производственное предприятие «Электромир»</strong> — украинская компания, основанная в 2001 году в городе Донецке.</div>
-<p><strong>В настоящее время это современный завод по производству стабилизаторов напряжения. <br><br></strong></p>
-<p><strong>Лучшие стабилизаторы напряжения </strong></p>
-<p><br>Специалисты компании <strong>более 15 лет</strong> занимаются решением проблем качества сетей электропитания и при этом используют<strong> передовые достижения </strong>мировой науки и собственные разработки.</p>
-<p>Основным направлением деятельности компании<strong> «Электромир»</strong> является проектирование и производство стабилизаторов напряжения переменного тока торговой марки<strong> </strong><strong>VOLTER</strong>.</p>
-<div>
-<div><strong>Эта продукция на хорошем счету как у владельцев квартир и домов, так и у руководителей малого и среднего бизнеса, а также крупных промышленных предприятий. </strong></div>
-<br>
-<div>Основными отличиями стабилизаторов напряжения <strong>VOLTER </strong>являются стабильное качество, надежность, долговечность, безопасность, неприхотливость и максимальная приспособленность к нашим электрическим сетям. <br><br>Это подтверждают сертификаты соответствия УкрСЕПРО, Госстандарта России и сертификат <strong>ISO 9001 «Системы управления качеством»</strong>, а также протоколы испытаний. <br><br></div>
-<strong>Быстро включая в производство самые современные технологии, ЧНПП «Электромир» постоянно ведет разработки новой продукции, стремясь не упустить свои позиции в будущем. </strong></div>
-<p>Исследовательская группа компании <strong>«Электромир» </strong>состоит из профессиональных инженеров и опытных технических работников. <br><br>В настоящее время компания<strong> «Электромир»</strong> имеет собственные сервисные центры в России, Украине и широкую дилерскую сеть. <strong><br></strong></p>
-<p><strong>Квалифицированные специалисты сервисных центров всегда готовы ответить на Ваши вопросы, а также обеспечат качественный монтаж и сервисное обслуживание стабилизаторов напряжения </strong><strong>VOLTER </strong><strong>на всем протяжении их эксплуатации.&nbsp;</strong></p>
-        </div>
+
+    <div id="content">
+
+     {% block content%} {% endblock %}
+
+
     <div id="sidebar">
       <div class="news">
         <ul id="sidenav">
@@ -308,9 +299,6 @@ function DoWin(namehtm,wwin,hwin) {
        {% tags_news %}
 
 
-
-
-
       </div>
       <div id="adv2">
         <img src="./Энерго форум.информация_files/ill-06.jpg" alt="баннер 250 х 130">
@@ -323,39 +311,32 @@ function DoWin(namehtm,wwin,hwin) {
 
         <div class="vote">
         <h2>У вас есть дома стабилизатор?</h2>
-        <form class="vote-form" method="post" action="/skipopros/">
+
       <div class="message"></div>
     <table>
-            <tbody><tr>
-        <th colspan="3">Да</th>
-      </tr>
-      <tr>
-        <td class="procent">50%</td>
-        <td><img src="{% static "/img/ill_Line.gif" %}" width="20" height="8"></td>
-        <td class="total">1</td>
-      </tr>
-            <tr>
-        <th colspan="3">Нет</th>
-      </tr>
-      <tr>
-        <td class="procent">0%</td>
-        <td><img src="{% static "/img/ill_Line.gif" %}" width="0" height="8"></td>
-        <td class="total">0</td>
-      </tr>
-            <tr>
-        <th colspan="3">Есть у соседей</th>
-      </tr>
-      <tr>
-        <td class="procent">50%</td>
-        <td><img src="{% static "/img/ill_Line.gif" %}" width="50" height="8"></td>
-        <td class="total">1</td>
-      </tr>
+            <tbody>
+
+
+         {% for answer in answer_list %}
+
+                 <tr>
+               <th colspan="3">{{answer}}</th>
+                </tr>
+                <tr>
+                     <td class="procent">{{answer.persent}}  %</td>
+                     <td><img src="{% static "/img/ill_Line.gif" %}" width={{answer.persent}} height="8"></td>
+                     <td class="total">{{answer.valueAnswer}}</td>
+               </tr>
+
+         {%endfor%}
+
+
             <tr>
         <td class="procent vote" colspan="2">Проголосовало:</td>
-        <td class="total vote">2</td>
+        <td class="total vote">{{usersAnswers}}</td>
       </tr>
     </tbody></table>
-    </form>
+
      </div>
    {%  else %}
 
@@ -383,12 +364,12 @@ function DoWin(namehtm,wwin,hwin) {
           <li><a href="/energotechnology/otoplenie">Отопление</a></li>
         </ul>
       </li>
-      <li id="n_info" class="sel"><a href="http://energoforum/info.html">Информация</a></li>
+      <li id="n_info" class="sel"><a href="/info/">Информация</a></li>
       <li id="n_shop">
-      	<a href="http://energoforum/catalog.html">Магазин</a>
+      	<a href="/catalog/">Магазин</a>
       </li>
-      <li id="n_faq"><a href="http://energoforum/faq.html">FAQ</a></li>
-      <li id="n_contact"><a href="http://energoforum/contact.html">Контакты</a></li>
+      <li id="n_faq"><a href="/faq/">FAQ</a></li>
+      <li id="n_contact"><a href="/contact/">Контакты</a></li>
     </ul>
     <span class="tel">(057) 750-75-86</span>
     <ul class="mini_nav">
@@ -422,11 +403,11 @@ function DoWin(namehtm,wwin,hwin) {
   <div id="footer">
     <hr>
     <ul id="subnav">
-      <li><a href="http://energoforum/energotechnology.html">Энерготехнологии</a></li>
-      <li><a href="http://energoforum/info.html">Информация</a></li>
-      <li><a href="http://energoforum/catalog.html">Магазин</a></li>
-      <li><a href="http://energoforum/faq.html">FAQ</a></li>
-      <li><a href="http://energoforum/contact.html">Контакты</a></li>
+      <li><a href="/energotechnology/">Энерготехнологии</a></li>
+      <li><a href="/info/">Информация</a></li>
+      <li><a href="/catalog/">Магазин</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/contact/">Контакты</a></li>
     </ul>
     <address class="author vcard">
       <a class="fn n org url work" rel="me" href="http://energoforum.com/">Energoforum.com</a>. © 2009. Все права защищены.

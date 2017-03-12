@@ -1,7 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d941691-180e-447d-9b5e-5974b1aaf4a8" name="Default" comment="" />
+    <list default="true" id="8d941691-180e-447d-9b5e-5974b1aaf4a8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/templates/testimonials.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/images/hiddenfield.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/images/hiddenfield.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/icons_hidpi.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/icons_hidpi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/iframe/images/placeholder.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/iframe/images/placeholder.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/image/images/noimage.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/image/images/noimage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/images/anchor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/hidpi/icon.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/icon-rtl.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/icon.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_address.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_address.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_blockquote.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_blockquote.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_div.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_div.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h1.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h2.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h3.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h4.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h5.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h6.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_h6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_p.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_p.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_pre.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/showblocks/images/block_pre.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angel_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angel_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angry_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angry_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/broken_heart.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/broken_heart.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/broken_heart.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/broken_heart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/confused_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/confused_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/confused_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/confused_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/cry_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/cry_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/embarrassed_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/embarrassed_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/embarrassed_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/envelope.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/envelope.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/envelope.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/envelope.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/heart.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/heart.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/heart.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/heart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/kiss.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/kiss.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/kiss.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/kiss.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/lightbulb.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/lightbulb.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/lightbulb.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/lightbulb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/omg_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/omg_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/omg_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/omg_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/regular_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/regular_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/regular_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/regular_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/sad_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/sad_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/shades_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/shades_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/shades_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/shades_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/tounge_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/tounge_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/wink_smile.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/wink_smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/images/template1.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/images/template1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/images/template2.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/images/template2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/images/template3.gif" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/images/template3.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/arrow.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/close.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/close.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/lock-open.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/lock.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/images/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/admin.py" afterPath="$PROJECT_DIR$/content/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/models.py" afterPath="$PROJECT_DIR$/content/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/templates/question_tag.html" afterPath="$PROJECT_DIR$/content/templates/question_tag.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/templates/testimonials_tags.html" afterPath="$PROJECT_DIR$/content/templates/testimonials_tags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/templatetags/content_tags.py" afterPath="$PROJECT_DIR$/content/templatetags/content_tags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/views.py" afterPath="$PROJECT_DIR$/content/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/energoforum/settings.py" afterPath="$PROJECT_DIR$/energoforum/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/energoforum/urls.py" afterPath="$PROJECT_DIR$/energoforum/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor-init.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor-init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/README.md" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/adapters/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/build-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/config.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/contents.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/contents.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/af.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ar.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/bn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/bs.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/cs.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/cy.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/da.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/de.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/el.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en-au.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en-ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en-gb.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/eo.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/es.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/et.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/eu.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fa.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fo.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/gl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/gu.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/he.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/hi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/hr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/hu.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/id.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/is.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/it.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ja.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ka.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/km.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ko.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ku.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/lt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/lv.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/mn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/mn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ms.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/nb.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/nl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/no.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/pt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ro.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ru.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/si.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sq.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sr-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sv.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/th.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/tr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/tt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ug.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/uk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/vi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/zh.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/div/dialogs/div.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/div/dialogs/div.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/find/dialogs/find.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/find/dialogs/find.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/flash/dialogs/flash.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/flash/dialogs/flash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/button.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/checkbox.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/checkbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/form.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/radio.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/radio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/select.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/textarea.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/textarea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/textfield.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/forms/dialogs/textfield.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/iframe/dialogs/iframe.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/iframe/dialogs/iframe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/liststyle/dialogs/liststyle.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/scayt/dialogs/options.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/table/dialogs/table.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/table/dialogs/table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/dialogs/templates.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/dialogs/templates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/default.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/templates/templates/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/readme.md" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/skins/moono/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/styles.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/ckeditor/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/css/basic.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/css/basic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/css/galleriffic-2.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/css/galleriffic-2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/css/galleriffic-5.css" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/css/galleriffic-5.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/js/jquery.galleriffic.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/js/jquery.galleriffic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/js/jquery.history.js" afterPath="$PROJECT_DIR$/static_cdn/ckeditor/galleriffic/js/jquery.history.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staticpages/views.py" afterPath="$PROJECT_DIR$/staticpages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +341,9 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="367" column="25" lean-forward="false" selection-start-line="367" selection-start-column="25" selection-end-line="367" selection-end-column="25" />
+            <state relative-caret-position="64">
+              <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
               <folding>
-                <element signature="e#9808#9814#0" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -29,31 +351,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question_tag.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question_tag.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/templates/question_tag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_tags.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/templates/news_tags.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testimonials_tags.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/templates/testimonials_tags.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,10 +374,54 @@
       <file leaf-file-name="content_tags.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/templatetags/content_tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75">
+              <caret line="1" column="76" lean-forward="false" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/energoforum/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#654#695#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/energoforum/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+              <folding>
+                <element signature="e#315#324#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticpages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,22 +430,10 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="11" />
+            <state relative-caret-position="1710">
+              <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/energoforum/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-              <folding>
-                <element signature="e#315#324#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,32 +456,39 @@
       <find>вода</find>
       <find>карта</find>
       <find>load</find>
+      <find>jpg</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staticpages/views.py" />
-        <option value="$PROJECT_DIR$/content/admin.py" />
-        <option value="$PROJECT_DIR$/energoforum/settings.py" />
-        <option value="$PROJECT_DIR$/energoforum/urls.py" />
         <option value="$PROJECT_DIR$/content/templatetags/news_tags.py" />
         <option value="$PROJECT_DIR$/content/templatetags/testimonials_tags.py" />
         <option value="$PROJECT_DIR$/content/templatetags/question_tags.py" />
-        <option value="$PROJECT_DIR$/content/templates/question_tag.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/content/templates/testimonials_tags.html" />
-        <option value="$PROJECT_DIR$/content/templatetags/content_tags.py" />
-        <option value="$PROJECT_DIR$/content/models.py" />
         <option value="$PROJECT_DIR$/content/templates/news_tags.html" />
+        <option value="$PROJECT_DIR$/content/templates/question_tag.html" />
+        <option value="$PROJECT_DIR$/content/templatetags/content_tags.py" />
+        <option value="$PROJECT_DIR$/content/templates/testimonials_tags.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/content/templates/testimonials.html" />
+        <option value="$PROJECT_DIR$/content/views.py" />
+        <option value="$PROJECT_DIR$/content/admin.py" />
+        <option value="$PROJECT_DIR$/staticpages/views.py" />
+        <option value="$PROJECT_DIR$/content/templates/index.html" />
+        <option value="$PROJECT_DIR$/energoforum/urls.py" />
+        <option value="$PROJECT_DIR$/content/models.py" />
+        <option value="$PROJECT_DIR$/energoforum/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="222" />
-    <option name="y" value="247" />
-    <option name="width" value="1644" />
-    <option name="height" value="624" />
+    <option name="x" value="461" />
+    <option name="y" value="102" />
+    <option name="width" value="1815" />
+    <option name="height" value="553" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -169,6 +520,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="&lt; Python 3.5.2 (/usr/bin/python3.5) &gt;" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="energoforum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.5.2 (/usr/bin/python3.5) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -421,6 +790,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8d941691-180e-447d-9b5e-5974b1aaf4a8" name="Default" comment="" />
@@ -432,13 +804,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="222" y="247" width="1644" height="624" extended-state="0" />
-    <editor active="false" />
+    <frame x="461" y="102" width="1815" height="553" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22644629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -460,11 +832,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22644629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -478,17 +850,158 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/staticpages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energoforum/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#654#695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticpages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5205">
+          <caret line="347" column="10" lean-forward="false" selection-start-line="347" selection-start-column="10" selection-end-line="347" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/question_tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templatetags/content_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticpages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5505">
+          <caret line="367" column="25" lean-forward="false" selection-start-line="367" selection-start-column="25" selection-end-line="367" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/question_tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/news_tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/testimonials_tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templatetags/content_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energoforum/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4755">
           <caret line="317" column="0" lean-forward="true" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
           <folding>
-            <element signature="e#9808#9814#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
           </folding>
@@ -510,7 +1023,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +1040,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#9808#9814#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
           </folding>
@@ -556,9 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,9 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="68" column="6" lean-forward="false" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-          <folding>
-            <element signature="e#315#324#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,7 +1082,6 @@
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#9808#9814#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
           </folding>
@@ -605,9 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,9 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="62" column="59" lean-forward="false" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
-          <folding>
-            <element signature="e#315#324#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,9 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-409">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,9 +1130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,9 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,92 +1147,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/admin.py">
+    <entry file="file://$PROJECT_DIR$/content/templatetags/news_tags.py" />
+    <entry file="file://$PROJECT_DIR$/content/templatetags/testimonials_tags.py" />
+    <entry file="file://$PROJECT_DIR$/content/templatetags/question_tags.py" />
+    <entry file="file://$PROJECT_DIR$/content/templates/news_tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticpages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticpages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/templatetags/news_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/templatetags/testimonials_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="45">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/templatetags/question_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/energoforum/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#654#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="367" column="25" lean-forward="false" selection-start-line="367" selection-start-column="25" selection-end-line="367" selection-end-column="25" />
-          <folding>
-            <element signature="e#9808#9814#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/templates/question_tag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/templates/news_tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,33 +1172,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/testimonials.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/templatetags/content_tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="210">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticpages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="11" />
+        <state relative-caret-position="1710">
+          <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="1" column="76" lean-forward="false" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energoforum/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding>
+            <element signature="e#654#695#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/energoforum/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="178">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding>
             <element signature="e#315#324#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/templates/question_tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

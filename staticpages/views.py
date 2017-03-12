@@ -1,22 +1,16 @@
 from django.shortcuts import render
-
+from content.models import InfoText,MainText
 # Create your views here.
+
+
 def index(request):
+    info = MainText.objects.get()
+    context={"info":info}
+    print("Вывод обьекта",info.mainText)
 
-    context = {}
-    return render(request, 'base.html', context)
-
-def skipopros(request):
-    if request.POST and (request.session["question"] != question):
-        print("Эзапись значения")
+    return render(request, 'index.html', context)
 
 
-
-    else:
-        print("Метод НЕ Post")
-
-    context = {}
-    return render(request, 'base.html', context)
 
 
 def energotechnology(request):

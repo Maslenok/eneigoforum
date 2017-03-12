@@ -1,5 +1,6 @@
+from ckeditor_uploader.fields import RichTextUploadingField
 from unidecode import unidecode
-from django.db import models
+from django.db import models, connection
 import ckeditor
 from ckeditor.fields import RichTextField
 from django.utils.text import slugify
@@ -10,13 +11,20 @@ from django.utils.text import slugify
 class Question(models.Model):
     class Meta:
         db_table="question"
-        verbose_name ="Вопрос"
-        verbose_name_plural = "Вопросы"
+        verbose_name ="Голосование"
+        verbose_name_plural = "Голосование"
 
     textQuestion=models.CharField("Вопрос", max_length=255)
     dateQuestion=models.DateField(verbose_name="Дата создания вопроса", auto_now_add=True)
     usersAnswers=models.SmallIntegerField("Количество проголосовавших",blank=True,default=0)
+    is_active=models.BooleanField("Активный опрос",blank=False)
     #requestSession=models.CharField("Сесия " , max_length=150)
+
+    def save(self):
+        if self.is_active:
+            cursor=connection.cursor()
+            cursor.execute("UPDATE question SET is_active=0 WHERE id!=%s",[self.id])
+        super(Question, self).save()
 
     def __str__(self):
         return self.textQuestion
@@ -33,6 +41,7 @@ class Answer(models.Model):
     textAnswer=models.CharField("Ответ", max_length=100)
     question=models.ForeignKey(Question,on_delete=models.CASCADE, verbose_name= "Относится к вопросу" )
     valueAnswer=models.SmallIntegerField("количество ответов",blank=True,default=0)
+    persent=models.SmallIntegerField(blank=True,default=0)
 
 
 
@@ -42,6 +51,8 @@ class Answer(models.Model):
 
     def __unicode__(self):
         return self.textAnswer
+
+
 
 
 class News(models.Model):
@@ -88,7 +99,7 @@ class MainText(models.Model):
         verbose_name = "Информация на главной странице"
         verbose_name_plural = "Информация на главной странице"
 
-    mainText = ckeditor.fields.RichTextField(verbose_name=u'Текст',blank=True)
+    mainText = RichTextUploadingField(verbose_name=u'Текст',blank=True)
     title = models.CharField(max_length=100, help_text="Информация на главной странице",blank=True)
     slug = models.SlugField(max_length=100, verbose_name='Короткое имя', blank=True)
 
@@ -102,5 +113,27 @@ class MainText(models.Model):
 
     def __unicode__(self):
         return self.title
+
+class InfoText(models.Model):
+    class Meta:
+        db_table = "infoText"
+        verbose_name = "Информация на на странице информации"
+        verbose_name_plural = "Информация на на странице информации"
+
+    infoText = RichTextField(verbose_name=u'Текст', blank=True)
+    title = models.CharField(max_length=100, help_text="Информация на на странице информации", blank=True)
+    slug = models.SlugField(max_length=100, verbose_name='Короткое имя', blank=True)
+
+    def save(self):
+        super(InfoText, self).save()
+        self.slug = slugify(unidecode(self.title))
+        super(InfoText, self).save()
+
+    def __str__(self):
+        return self.title
+
+    def __unicode__(self):
+        return self.title
+
 
 # Create your models here.

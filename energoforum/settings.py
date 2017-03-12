@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ckeditor',
     'staticpages',
+    'ckeditor_uploader',
+    'ckeditor',
+    'PIL',
     'content'
 
 ]
@@ -135,12 +137,14 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'static' , 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
-CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_IMAGE_BACKEND = "PIL"
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+
+
 CKEDITOR_CONFIGS = {
     'default': {
         'width': 700,
