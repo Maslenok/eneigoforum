@@ -1,5 +1,62 @@
 {% extends "base.html" %}
 
 {% block content%}
-тут отзыв
+<div id="content-text">
+
+            <h1>Отзывы</h1>
+      <h5>Добавить отзыв</h5>
+
+      <form class="contact-form" action="http://energoforum/testimonials.html" method="post">
+        <input type="hidden" name="add" value="1">
+        <fieldset>
+          <fieldset class="left">
+            <label for="name"><b>Имя:</b></label><br>
+            <input type="text" name="name" id="name" value=""><br>
+		  </fieldset>
+          <fieldset class="right">
+            <label for="email"><b>Email:</b></label><br>
+            <input type="text" name="email" id="email" value=""><br>
+          </fieldset>
+          <fieldset class="left">
+            <label for="rating"><b>Рейтинг:</b></label><br>
+            <input type="radio" name="rating" id="r1" value="1"><label for="r1">отвратительно</label><br>
+            <input type="radio" name="rating" id="r2" value="2"><label for="r2">плохо</label><br>
+            <input type="radio" name="rating" id="r3" value="3"><label for="r3">нормально</label><br>
+            <input type="radio" name="rating" id="r4" value="4"><label for="r4">хорошо</label><br>
+            <input type="radio" name="rating" id="r5" value="5"><label for="r5">отлично</label><br>
+		  </fieldset>
+          <fieldset class="left">
+          <label for="comment"><b>Отзыв:</b></label><br>
+          <textarea name="comment" id="comment"></textarea>
+          </fieldset>
+          <fieldset class="btn_wrapper">
+            <input type="submit" id="btn_send" value="отправить" title="отправить">
+          </fieldset>
+        </fieldset>
+      </form>
+
+
+      <blockquote>
+         <cite>Вита</cite>
+          <var class="date">03.09.2010</var>
+          <dfn class="rating r5">отлично<span></span></dfn>
+          <q>Купила один из стабилизаторов. Стоит дома. Работает тихо. Всем рекомендую.</q>
+      </blockquote>
+
+      <blockquote>
+         <cite>123</cite>
+          <var class="date">03.09.2010</var>
+          <dfn class="rating r3">нормально<span></span></dfn>
+          <q>123</q>
+      </blockquote>
+
+      <blockquote>
+         <cite>Мария</cite>
+          <var class="date">27.08.2010</var>
+          <dfn class="rating r5">отлично<span></span></dfn>
+          <q>Хорошая продукция. Ниче так. Я довольна. Всем друзьям порекомендую. Спасибо вам большое за сайт.</q>
+      </blockquote>
+
+</div>
+
 {% endblock %}

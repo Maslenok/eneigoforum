@@ -17,17 +17,19 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 from content.views import skipopros,testimonials
-from staticpages.views import index,energotechnology
+from staticpages.views import index,energotechnology, info,news,newslist
 from django.conf.urls.static import static
 from django.conf import settings
 from energoforum import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^energotechnology/$', energotechnology),
+   # url(r'^energotechnology/$', energotechnology),
     url(r'^skipopros/$', skipopros),
-    url(r'^news/', skipopros),
+    url(r'^news/$', newslist),
+    url(r'^news/(\.*)/$', news),
     url(r'^testimonials/', testimonials),
+    url(r'^info/', info),
     url (r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^', index),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
