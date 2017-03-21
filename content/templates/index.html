@@ -1,14 +1,17 @@
-{% extends "base.html" %}
+{% extends "base2.html" %}
 
 {% block content%}
-
+{% load staticfiles %}
 <div id="content-text">
+типо картинка
+<img src="/media/uploads/2017/03/19/ill-08.jpg" alt="баннер">
+
 
             <h1>{{info.title}} </h1>
            {{info.mainText|safe|default:'' }}
 <!--  Баннер -->
       <div id="adv1">
-        <img src="./Энерго форумindex_files/ill-02.jpg" alt="Баннер 500 х 100">
+        <img src="{% static "/img/userfiles/ill-02.jpg" %}" alt="Баннер 500 х 100">
       </div>
 <!-- /Баннер -->
 

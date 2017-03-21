@@ -1,4 +1,6 @@
-from ckeditor_uploader.fields import RichTextUploadingField
+#from ckeditor_uploader.fields import RichTextUploadingField
+
+
 from unidecode import unidecode
 from django.db import models, connection
 import ckeditor
@@ -99,7 +101,7 @@ class MainText(models.Model):
         verbose_name = "Информация на главной странице"
         verbose_name_plural = "Информация на главной странице"
 
-    mainText = RichTextUploadingField(verbose_name=u'Текст',blank=True)
+    mainText = RichTextField(verbose_name=u'Текст',blank=True)
     title = models.CharField(max_length=100, help_text="Информация на главной странице",blank=True)
     slug = models.SlugField(max_length=100, verbose_name='Короткое имя', blank=True)
 

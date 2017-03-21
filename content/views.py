@@ -30,7 +30,7 @@ def skipopros(request):
              "usersAnswers": question.usersAnswers,
 
              }
-    return render(request, 'base.html', context)
+    return render(request, 'base2.html', context)
 
 def testimonials(request):
     context={

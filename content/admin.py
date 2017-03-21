@@ -1,6 +1,10 @@
-from django.contrib import admin
-from .models import Answer, Question, News, Testimonials, MainText, InfoText
 from django import forms
+from django.contrib import admin
+from ckeditor.widgets import CKEditorWidget
+from .models import Answer, Question, News, Testimonials, MainText, InfoText
+from django.forms import ModelForm
+
+
 
 class AnswerInlines(admin.TabularInline):
     model = Answer
@@ -20,6 +24,7 @@ class MainTextAdmin(admin.ModelAdmin):
         return self.model.objects.all().count() < 1
 
 class InfoTextAdmin(admin.ModelAdmin):
+
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
         return self.model.objects.all().count() < 1
 

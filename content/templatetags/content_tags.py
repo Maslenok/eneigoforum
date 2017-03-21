@@ -31,4 +31,4 @@ def tags_testimonials():
         return {"testimonials_list":testimonials_list}
     else:
         error_new="Нет отзывов.Вы будете первым"
-        return ()
+        return {"error_new": error_new}

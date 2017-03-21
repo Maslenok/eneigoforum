@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.template.context_processors import csrf
+
 from content.models import InfoText,MainText, InfoText
 # Create your views here.
 
@@ -6,7 +8,10 @@ from content.models import InfoText,MainText, InfoText
 def index(request):
 
     info = MainText.objects.get()
-    context={"info":info}
+
+    context={ "info":info,
+
+    }
     print("Запускаем отображение  Index")
 
     return render(request, 'index.html', context)

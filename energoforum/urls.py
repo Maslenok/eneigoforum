@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from content.views import skipopros,testimonials
 from staticpages.views import index,energotechnology, info,news,newslist
 from django.conf.urls.static import static
 from django.conf import settings
-from energoforum import settings
+#from energoforum import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -29,7 +30,7 @@ urlpatterns = [
     url(r'^news/$', newslist),
     url(r'^news/(\.*)/$', news),
     url(r'^testimonials/', testimonials),
-    url(r'^info/', info),
-    url (r'^ckeditor/', include('ckeditor_uploader.urls')),
+    url(r'^info/$', info),
+    url (r'^ckeditor/', include('ckeditor.urls')),
     url(r'^', index),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
