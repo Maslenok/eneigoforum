@@ -6,8 +6,14 @@
               <li>
                <span class="name">{{testimonials.name}}</span>
                <var class="date">{{testimonials.dateCreate}}</var>
-               <dfn class="rating r{{testimonials.rating}}">отлично<span></span></dfn>
-               <p>Купила один из стабилизаторов. Стоит дома....<a href="/testimonials/"> подробнее</a> </p>
+
+               {% if testimonials.rating == 1 %}  <dfn class="rating r1">отвратительно<span></span></dfn>  {%endif %}
+               {% if testimonials.rating == 2 %}  <dfn class="rating r2">плохо<span></span></dfn>  {%endif %}
+               {% if testimonials.rating == 3 %}  <dfn class="rating r3">нормально<span></span></dfn>  {%endif %}
+               {% if testimonials.rating == 4 %}  <dfn class="rating r4">хорошо<span></span></dfn>  {%endif %}
+               {% if testimonials.rating == 5 %}  <dfn class="rating r5">отлично<span></span></dfn>  {%endif %}
+
+               <p>{{testimonials.comment}}<a href="/testimonials/"> подробнее</a> </p>
               </li>
 
 

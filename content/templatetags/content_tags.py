@@ -18,7 +18,7 @@ def tags_question():
 def tags_news():
 
     if News.objects.all().count() >= 1:
-        answer_list = News.objects.all()
+        answer_list = News.objects.all()[:3]
         return {"news_list":answer_list}
     else:
         error_new="Нет новостей"
@@ -27,7 +27,7 @@ def tags_news():
 @register.inclusion_tag("testimonials_tags.html")
 def tags_testimonials():
     if Testimonials.objects.all().count()>=1:
-        testimonials_list=Testimonials.objects.all()
+        testimonials_list=Testimonials.objects.all()[:3]
         return {"testimonials_list":testimonials_list}
     else:
         error_new="Нет отзывов.Вы будете первым"

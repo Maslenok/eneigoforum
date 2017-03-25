@@ -13,22 +13,27 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+admin.autodiscover()
 
-from content.views import skipopros,testimonials
-from staticpages.views import index,energotechnology, info,news,newslist
+from content.views import skipopros,testimonials, newslist, news
+from staticpages.views import index, info, energotechnologyAll, energotechnology, faq, contact
 from django.conf.urls.static import static
 from django.conf import settings
 #from energoforum import settings
 
 urlpatterns = [
+
     url(r'^admin/', admin.site.urls),
-   # url(r'^energotechnology/$', energotechnology),
+    url(r'^energotechnology/$', energotechnologyAll),
+    url(r'^energotechnology/(.+)/$', energotechnology),
     url(r'^skipopros/$', skipopros),
     url(r'^news/$', newslist),
-    url(r'^news/(\.*)/$', news),
+    url(r'^contact/$', contact),
+    url(r'^faq/$', faq),
+    url(r'^news/(\d+)/$', news),
     url(r'^testimonials/', testimonials),
     url(r'^info/$', info),
     url (r'^ckeditor/', include('ckeditor.urls')),

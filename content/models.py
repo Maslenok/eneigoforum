@@ -1,11 +1,10 @@
-#from ckeditor_uploader.fields import RichTextUploadingField
-
-
 from unidecode import unidecode
 from django.db import models, connection
-import ckeditor
 from ckeditor.fields import RichTextField
 from django.utils.text import slugify
+from energoforum import settings
+from imagekit.models import ImageSpecField
+from pilkit.processors import SmartResize
 #from django.conf import settings
 #from imagekit import .all()
 #from pilkit.processors import SmartResize
@@ -23,6 +22,7 @@ class Question(models.Model):
     #requestSession=models.CharField("Сесия " , max_length=150)
 
     def save(self):
+        super(Question, self).save()
         if self.is_active:
             cursor=connection.cursor()
             cursor.execute("UPDATE question SET is_active=0 WHERE id!=%s",[self.id])
@@ -54,9 +54,6 @@ class Answer(models.Model):
     def __unicode__(self):
         return self.textAnswer
 
-
-
-
 class News(models.Model):
     class Meta:
         db_table="news"
@@ -64,11 +61,11 @@ class News(models.Model):
         verbose_name_plural = "Новости"
     dateTime=models.DateField(verbose_name="Время создания", auto_now_add=True)
     title=models.CharField("заголовок новости",max_length=50)
-    textNews=ckeditor.fields.RichTextField(verbose_name=u'Текст Новости')
-    imgNews=models.ImageField(verbose_name=u'Картинка', null=True, blank=True,default='/img/noimage.jpg')
+    textNews=RichTextField(verbose_name=u'Текст Новости')
+    imgNews=models.ImageField(verbose_name=u'Картинка',upload_to='static/media/images/', null=True, blank=True, default='images/noimage.jpg')
    # imgNews_resize = ImageSpecField(
-   #     [SmartResize(*settings.PHOTO_IMAGE_NEWS_SMOL_SIZE)], source='news', format='JPEG', options={'quality': 94}
-  #  )
+  #  [SmartResize(*settings.PHOTO_IMAGE_NEWS_SMOL_SIZE)], source='imgNews', format='JPEG', options={'quality': 94}
+   # )
 
     def __str__(self):
         return self.title
@@ -80,11 +77,11 @@ class News(models.Model):
 class Testimonials(models.Model):
     class Meta:
         db_table="testimonials"
-        verbose_name = "Опрос"
-        verbose_name_plural = "Опросы"
+        verbose_name = "Отзыв"
+        verbose_name_plural = "Отзывы"
 
     name=models.CharField("Имя",max_length=100)
-    email=models.EmailField()
+    email=models.EmailField(blank=True)
     rating=models.SmallIntegerField(verbose_name="Рейтинг")
     comment=models.TextField("Отзыв")
     dateCreate=models.DateField("Дата создания отзыва", auto_now_add=True)
@@ -95,47 +92,3 @@ class Testimonials(models.Model):
     def __unicode__(self):
         return self.name
 
-class MainText(models.Model):
-    class Meta:
-        db_table="indextText"
-        verbose_name = "Информация на главной странице"
-        verbose_name_plural = "Информация на главной странице"
-
-    mainText = RichTextField(verbose_name=u'Текст',blank=True)
-    title = models.CharField(max_length=100, help_text="Информация на главной странице",blank=True)
-    slug = models.SlugField(max_length=100, verbose_name='Короткое имя', blank=True)
-
-    def save(self):
-        super(MainText, self).save()
-        self.slug = slugify(unidecode(self.title))
-        super(MainText, self).save()
-
-    def __str__(self):
-        return self.title
-
-    def __unicode__(self):
-        return self.title
-
-class InfoText(models.Model):
-    class Meta:
-        db_table = "infoText"
-        verbose_name = "Информация на на странице информации"
-        verbose_name_plural = "Информация на на странице информации"
-
-    infoText = RichTextField(verbose_name=u'Текст', blank=True)
-    title = models.CharField(max_length=100, help_text="Информация на на странице информации", blank=True)
-    slug = models.SlugField(max_length=100, verbose_name='Короткое имя', blank=True)
-
-    def save(self):
-        super(InfoText, self).save()
-        self.slug = slugify(unidecode(self.title))
-        super(InfoText, self).save()
-
-    def __str__(self):
-        return self.title
-
-    def __unicode__(self):
-        return self.title
-
-
-# Create your models here.

@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib import admin
 from ckeditor.widgets import CKEditorWidget
-from .models import Answer, Question, News, Testimonials, MainText, InfoText
+from .models import Answer, Question, News, Testimonials
 from django.forms import ModelForm
 
 
@@ -19,21 +19,26 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ("textQuestion","dateQuestion", "usersAnswers", "is_active")
     list_editable = ("is_active",)
 
-class MainTextAdmin(admin.ModelAdmin):
-    def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
-        return self.model.objects.all().count() < 1
 
-class InfoTextAdmin(admin.ModelAdmin):
+
+class TestimonialsAdmin(admin.ModelAdmin):
+    fields = ("name", "email", "rating", "comment",)
+    readonly_fields = ("name", "email", "rating", "comment",)
+    list_display = ("name", "email", "rating", )
+    list_filter=["name", "email", "rating", ]
+    list_per_page=5
 
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
-        return self.model.objects.all().count() < 1
+        return  False
+
+
 
 #admin.site.register(Answer, admin.ModelAdmin)
+
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(News, admin.ModelAdmin)
-admin.site.register(Testimonials, admin.ModelAdmin)
-admin.site.register(MainText, MainTextAdmin)
-admin.site.register(InfoText, InfoTextAdmin)
+admin.site.register(Testimonials, TestimonialsAdmin)
+
 # Register your models here.
 
 

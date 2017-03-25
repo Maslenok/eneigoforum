@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'imagekit',
     'ckeditor',
     'staticpages',
     'content'
@@ -82,7 +83,7 @@ WSGI_APPLICATION = 'energoforum.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
+'''''
 DATABASES = {
       'default': {
           'NAME': 'energoforum',
@@ -94,7 +95,14 @@ DATABASES = {
           },
       }
   }
+'''''
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 
 # Password validation
@@ -141,11 +149,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'static', 'media')
 STATICFILES_DIRS = [
 
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, 'media'),
-
 ]
-
-
 
 
 
@@ -180,3 +184,4 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+PHOTO_IMAGE_NEWS_SMOL_SIZE=[80, 80]

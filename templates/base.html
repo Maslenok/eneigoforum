@@ -287,7 +287,7 @@ function DoWin(namehtm,wwin,hwin) {
             <a href="/energotechnology/">Энерготехнологии</a>
                        </li>
           <li><a href="/info/">Информация</a></li>
-          <li><a href="/forum/">Форум</a></li>
+
           <li>
           	<a href="/catalog/">Магазин</a>
           	          </li>
@@ -351,26 +351,54 @@ function DoWin(namehtm,wwin,hwin) {
     </div>
   </div>
 
-  <div id="header" class="n_contact">
+
+
+
+{% if "energotechnology" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
+{% if "info" in  request.path  %}  <div id="header" class="n_info">  {%endif %}
+{% if "catalog" in  request.path  %}  <div id="header" class="n_shop">  {%endif %}
+{% if "faq" in  request.path  %}  <div id="header" class="n_faq">  {%endif %}
+{% if "contact" in  request.path  %}  <div id="header" class="n_contact">  {%endif %}
+                    {% ifequal request.path "/" %}  <div id="header" class="n_info">   {%endifequal %}
+{% if "testimonials" in  request.path  %}  <div id="header" class="n_info">  {%endif %}
+{% if "/news/" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
+{% if "/skipopros/" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
+
+
+
 <div id="divaddtocart"></div>
+
     <ul id="nav">
-      <li id="n_energo">
+
+
+      <li id="n_energo" {% if "energotechnology" in  request.path  %}  class="sel"    {%endif %} >
         <a href="/energotechnology/">Энерготехнологии</a>
         <ul>
-          <li><a href="/energotechnology/sun">Солнце</a></li>
-          <li><a href="/energotechnology/water">Вода</a></li>
-          <li><a href="/energotechnology/east">Земля</a></li>
-          <li><a href="/energotechnology/osveshenie">Освещение</a></li>
-          <li><a href="/energotechnology/otoplenie">Отопление</a></li>
+          <li ><a href="/energotechnology/sun/">Солнце</a></li>
+          <li ><a href="/energotechnology/water/">Вода</a></li>
+          <li ><a href="/energotechnology/east/">Земля</a></li>
+          <li ><a href="/energotechnology/osveshenie/">Освещение</a></li>
+          <li ><a href="/energotechnology/otoplenie/">Отопление</a></li>
         </ul>
       </li>
-      <li id="n_info" class="sel"><a href="/info/">Информация</a></li>
-      <li id="n_shop">
+
+
+
+      <li id="n_info" {% if "info" in  request.path  %}  class="sel"   {%endif %}><a href="/info/">Информация</a></li>
+
+      <li id="n_shop" {% if "catalog" in  request.path  %}  class="sel" {%endif %}>
       	<a href="/catalog/">Магазин</a>
       </li>
-      <li id="n_faq"><a href="/faq/">FAQ</a></li>
-      <li id="n_contact"><a href="/contact/">Контакты</a></li>
+
+      <li id="n_faq" {% if "faq" in  request.path  %}  class="sel" {%endif %}><a href="/faq/">FAQ</a></li>
+
+
+      <li id="n_contact" {% if "contact" in  request.path  %}  class="sel" {%endif %}><a href="/contact/">Контакты</a></li>
     </ul>
+
+
+
+
     <span class="tel">(057) 750-75-86</span>
     <ul class="mini_nav">
       <li class="cart"><a href="/shoppingcart/" title="Корзина">Корзина</a></li>
@@ -388,6 +416,11 @@ function DoWin(namehtm,wwin,hwin) {
         </fieldset>
       </form>    </div>
 
+
+
+
+
+
     <div class="cart-block">
       <h2>Ваша корзина</h2>
       <span id="carttext">
@@ -402,6 +435,12 @@ function DoWin(namehtm,wwin,hwin) {
     </div>
 
   </div>
+
+
+
+
+
+
   <div id="footer">
     <hr>
     <ul id="subnav">

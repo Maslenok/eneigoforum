@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+<body>
+<div id="content-text">
+
+   {%for text in faq_list%}
+ 		<table>
+			<tbody><tr>
+				<th colspan="2">
+				<h5>{{text.question}}</h5>
+
+				</th>
+			</tr>
+			<tr>
+			<td colspan="2">
+
+      		<p>{{text.answer}}</p>
+
+				</td>
+			</tr>
+		</tbody></table>
+    {%endfor%}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if faq_list.has_previous %}
+            <a href="?page={{ faq_list.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ faq_list.number }} of {{ faq_list.paginator.num_pages }}.
+        </span>
+
+        {% if faq_list.has_next %}
+            <a href="?page={{ faq_list.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+</div>
+
+
+</body>
+
+{% endblock %}

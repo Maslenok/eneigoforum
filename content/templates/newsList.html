@@ -3,55 +3,39 @@
 {% block content%}
 
 <div id="content-text">
-<h1>Новости</h1>
-
+   {%for news in news_list%}
  		<table>
 			<tbody><tr>
 				<th colspan="2">
-				<h5>123</h5>
-				 <h6 class="v3">22:43, <strong>27.08.2010</strong></h6>
+				<h5>{{news.title}}</h5>
+				  <h6> Дата выхода новости {{news.dateTime}} </h6>
 				</th>
 			</tr>
 			<tr>
 			<td colspan="2">
 
-      		<p>123</p>
-      		<a href="http://energoforum/onenews/6.html">подробнее...</a>
+      		<p>{{news.textNews|safe|truncatechars:230|default:''}}</p>
+      		<a href=/news/{{news.id}}/>подробнее...</a>
 				</td>
 			</tr>
 		</tbody></table>
+    {%endfor%}
 
- 		<table>
-			<tbody><tr>
-				<th colspan="2">
-				<h5>sdf</h5>
-				 <h6 class="v3">22:43, <strong>27.08.2010</strong></h6>
-				</th>
-			</tr>
-			<tr>
-			<td colspan="2">
+<div class="pagination">
+    <span class="step-links">
+        {% if news_list.has_previous %}
+            <a href="?page={{ news_list.previous_page_number }}">previous</a>
+        {% endif %}
 
-      		<p>sdf</p>
-      		<a href="http://energoforum/onenews/7.html">подробнее...</a>
-				</td>
-			</tr>
-		</tbody></table>
+        <span class="current">
+            Page {{ news_list.number }} of {{ news_list.paginator.num_pages }}.
+        </span>
 
- 		<table>
-			<tbody><tr>
-				<th colspan="2">
-				<h5>Акция!</h5>
-				 <h6 class="v3">20:48, <strong>25.04.2010</strong></h6>
-				</th>
-			</tr>
-			<tr>
-			<td colspan="2">
-
-      		<p>Вы получаете за самую низкую цену прибор для измерения напряжения в сети!</p>
-      		<a href="http://energoforum/onenews/1.html">подробнее...</a>
-				</td>
-			</tr>
-		</tbody></table>
+        {% if news_list.has_next %}
+            <a href="?page={{ news_list.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
 
 </div>
 {% endblock %}
