@@ -5,4 +5,4 @@ from django.apps import AppConfig
 
 class StaticpagesConfig(AppConfig):
     name = 'staticpages'
-    verbose_name = "Статическии старницы "
+    verbose_name = "Статические страницы "

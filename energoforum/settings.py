@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'imagekit',
     'ckeditor',
     'staticpages',
-    'content'
+    'content',
+    'energotechnology',
 
 ]
 

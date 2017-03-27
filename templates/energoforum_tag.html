@@ -1,0 +1,36 @@
+
+
+
+
+        {% for model in list_model %}
+            <tr class="model-{{ model.object_name|lower }}">
+            {% if model.admin_url %}
+
+                <th scope="row"><a href="{{ model.admin_url }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ model.name }}</a></th>
+                Это тут
+            {% else %}
+                А это тут
+                <th scope="row">{{ model.name }}</th>
+            {% endif %}
+
+            {% if model.add_url %}
+                <td><a href="{{ model.add_url }}" class="addlink">Добавить</a></td>
+            {% else %}
+                <td><a href="{{ model.admin_url }}" class="changelink">Изменить</a></td>
+                <td><a href="{{ model.admin_url }}{{model.object.id}}/delete/" class="deletelink">Удалить</a></td>
+            {% endif %}
+
+
+            </tr>
+        {% endfor %}
+
+
+
+
+
+
+
+
+
+
+

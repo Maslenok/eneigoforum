@@ -16,13 +16,15 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
+
+from energotechnology.views import energotechnologyAll, energotechnology
+
 admin.autodiscover()
 
-from content.views import skipopros,testimonials, newslist, news
-from staticpages.views import index, info, energotechnologyAll, energotechnology, faq, contact
+from content.views import skipopros,testimonials, newslist, news, faq
+from staticpages.views import index, info, contact
 from django.conf.urls.static import static
 from django.conf import settings
-#from energoforum import settings
 
 urlpatterns = [
 

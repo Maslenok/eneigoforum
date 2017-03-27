@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.template.context_processors import csrf
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from content.form import TestimonialsForm
-from content.models import Answer, Question, Testimonials, News
+from content.models import Answer, Question, Testimonials, News, FAQ
 from staticpages.models import MainText
 
 
@@ -101,3 +101,17 @@ def news (request, news):
     }
     return render(request, 'news.html', context)
 
+def faq(request):
+    faq_list=FAQ.objects.all()
+    paginator = Paginator(faq_list, 5)
+    page = request.GET.get('page')
+    try:
+        faq_list = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        faq_list = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        faq_list = paginator.page(paginator.num_pages)
+    context = {"faq_list":faq_list,}
+    return render(request, 'faq.html', context)

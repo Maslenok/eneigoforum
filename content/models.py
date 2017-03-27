@@ -9,6 +9,22 @@ from pilkit.processors import SmartResize
 #from imagekit import .all()
 #from pilkit.processors import SmartResize
 
+class FAQ(models.Model):
+    class Meta:
+        db_table = "faq"
+        verbose_name = "FAQ"
+        verbose_name_plural = "FAQ"
+
+    question = models.TextField(verbose_name=u'Вопрос', )
+    answer = models.TextField(verbose_name=u'Ответ', )
+
+
+    def __str__(self):
+        return self.question
+
+    def __unicode__(self):
+        return self.question
+
 class Question(models.Model):
     class Meta:
         db_table="question"
@@ -19,7 +35,6 @@ class Question(models.Model):
     dateQuestion=models.DateField(verbose_name="Дата создания вопроса", auto_now_add=True)
     usersAnswers=models.SmallIntegerField("Количество проголосовавших",blank=True,default=0)
     is_active=models.BooleanField("Активный опрос",blank=False)
-    #requestSession=models.CharField("Сесия " , max_length=150)
 
     def save(self):
         super(Question, self).save()

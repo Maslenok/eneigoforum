@@ -1,9 +1,5 @@
-from django import forms
 from django.contrib import admin
-from ckeditor.widgets import CKEditorWidget
-from .models import Answer, Question, News, Testimonials
-from django.forms import ModelForm
-
+from .models import Answer, Question, News, Testimonials, FAQ
 
 
 class AnswerInlines(admin.TabularInline):
@@ -19,8 +15,6 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ("textQuestion","dateQuestion", "usersAnswers", "is_active")
     list_editable = ("is_active",)
 
-
-
 class TestimonialsAdmin(admin.ModelAdmin):
     fields = ("name", "email", "rating", "comment",)
     readonly_fields = ("name", "email", "rating", "comment",)
@@ -32,13 +26,15 @@ class TestimonialsAdmin(admin.ModelAdmin):
         return  False
 
 
+class FAQAdmin(admin.ModelAdmin):
+    list_display = ("question",  )
+    fields = ("question", "answer", )
 
-#admin.site.register(Answer, admin.ModelAdmin)
 
+admin.site.register(FAQ, FAQAdmin)
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(News, admin.ModelAdmin)
 admin.site.register(Testimonials, TestimonialsAdmin)
 
-# Register your models here.
 
 
