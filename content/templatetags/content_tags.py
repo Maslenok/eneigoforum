@@ -1,7 +1,5 @@
 from django import template
-from django.apps import AppConfig
-from energotechnology import models
-import energotechnology
+from factory.django import get_model
 from content.models import Answer,Question, News, Testimonials
 from energotechnology.apps import EnergotechnologyConfig
 from energotechnology.models import EnergotechnologyAll, EnergotechnologySun, EnergotechnologyWater, \
@@ -50,15 +48,10 @@ def tags_energoforum(app_list):
         if app['app_label'] == "energotechnology":
             list_model=app["models"]
             for model in list_model:
+                model_class= get_model(app['app_label'], model['object_name'])
                 perm= model["perms"]
-                if perm["add"] != True:
-                    nameModel= str(model["object_name"])
-                    if nameModel == "EnergotechnologySun" : model["object"]=EnergotechnologySun.objects.get()
-                    if nameModel == "EnergotechnologyEast" : model["object"]=EnergotechnologyEast.objects.get()
-                    if nameModel == "EnergotechnologyWater" : model["object"]=EnergotechnologyWater.objects.get()
-                    if nameModel == "EnergotechnologyOsveshenie" : model["object"]=EnergotechnologyOsveshenie.objects.get()
-                    if nameModel == "EnergotechnologyOtoplenie" : model["object"]=EnergotechnologyOtoplenie.objects.get()
-
+                if perm["add"] == False:
+                    model["object"] = model_class.objects.get()
 
     return  {"list_model":list_model}
 

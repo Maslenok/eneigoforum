@@ -15,6 +15,8 @@ from unidecode import unidecode
 from staticpages.models import EnergotechnologyAll
 
 
+
+
 class EnergotechnologySun(models.Model):
     class Meta:
         db_table="energotechnologysun"
@@ -27,6 +29,7 @@ class EnergotechnologySun(models.Model):
     key=models.ForeignKey(EnergotechnologyAll, on_delete=models.CASCADE, verbose_name="Энерготехнологии")
 
     def save(self):
+        print(" Печать self", self)
         super(EnergotechnologySun, self).save()
         self.slug = slugify(unidecode(self.title))
         super(EnergotechnologySun, self).save()

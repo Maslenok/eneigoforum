@@ -10,11 +10,6 @@ from energotechnology.models import  EnergotechnologySun, EnergotechnologyEast, 
 
 
 class EnergotechnologySunAdmin(admin.ModelAdmin):
-    def change_view(self, request, object_id, form_url='', extra_context=None):
-        extra_context = extra_context or {}
-        extra_context['id'] = EnergotechnologySun.objects.get().id
-
-        return self.changeform_view(request, object_id, form_url, extra_context)
 
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
 
@@ -33,11 +28,6 @@ class EnergotechnologySunAdmin(admin.ModelAdmin):
 
 class EnergotechnologyEastAdmin(admin.ModelAdmin):
 
-    def change_view(self, request, object_id, form_url='', extra_context=None):
-        extra_context = extra_context or {}
-        extra_context['id'] = EnergotechnologyEast.objects.get().id
-        return self.changeform_view(request, object_id, form_url, extra_context)
-
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
         return self.model.objects.all().count() < 1
 
@@ -51,11 +41,6 @@ class EnergotechnologyEastAdmin(admin.ModelAdmin):
         return HttpResponseRedirect("/admin/")
 
 class EnergotechnologyWaterAdmin(admin.ModelAdmin):
-    def change_view(self, request, object_id, form_url='', extra_context=None):
-        extra_context = extra_context or {}
-        extra_context['id'] = EnergotechnologyWater.objects.get().id
-        return self.changeform_view(request, object_id, form_url, extra_context)
-
 
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
         return self.model.objects.all().count() < 1
@@ -73,10 +58,6 @@ class EnergotechnologyWaterAdmin(admin.ModelAdmin):
 
 
 class EnergotechnologyOsveshenieAdmin(admin.ModelAdmin):
-    def change_view(self, request, object_id, form_url='', extra_context=None):
-        extra_context = extra_context or {}
-        extra_context['id'] = EnergotechnologyOsveshenie.objects.get().id
-        return self.changeform_view(request, object_id, form_url, extra_context)
 
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
         return self.model.objects.all().count() < 1
@@ -91,10 +72,6 @@ class EnergotechnologyOsveshenieAdmin(admin.ModelAdmin):
         return HttpResponseRedirect("/admin/")
 
 class EnergotechnologyOtoplenieAdmin(admin.ModelAdmin):
-    def change_view(self, request, object_id, form_url='', extra_context=None):
-        extra_context = extra_context or {}
-        extra_context['id'] = EnergotechnologyOtoplenie.objects.get().id
-        return self.changeform_view(request, object_id, form_url, extra_context)
 
     def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
         return self.model.objects.all().count() < 1
