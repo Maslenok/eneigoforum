@@ -1,13 +1,6 @@
-from unidecode import unidecode
 from django.db import models, connection
 from ckeditor.fields import RichTextField
-from django.utils.text import slugify
-from energoforum import settings
-from imagekit.models import ImageSpecField
-from pilkit.processors import SmartResize
-#from django.conf import settings
-#from imagekit import .all()
-#from pilkit.processors import SmartResize
+
 
 class FAQ(models.Model):
     class Meta:
@@ -60,8 +53,6 @@ class Answer(models.Model):
     valueAnswer=models.SmallIntegerField("количество ответов",blank=True,default=0)
     persent=models.SmallIntegerField(blank=True,default=0)
 
-
-
     def __str__(self):
         return self.textAnswer
 
@@ -78,13 +69,9 @@ class News(models.Model):
     title=models.CharField("заголовок новости",max_length=50)
     textNews=RichTextField(verbose_name=u'Текст Новости')
     imgNews=models.ImageField(verbose_name=u'Картинка',upload_to='static/media/images/', null=True, blank=True, default='images/noimage.jpg')
-   # imgNews_resize = ImageSpecField(
-  #  [SmartResize(*settings.PHOTO_IMAGE_NEWS_SMOL_SIZE)], source='imgNews', format='JPEG', options={'quality': 94}
-   # )
 
     def __str__(self):
         return self.title
-
 
     def __unicode__(self):
         return self.title

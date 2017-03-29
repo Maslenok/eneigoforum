@@ -22,9 +22,8 @@ class TestimonialsAdmin(admin.ModelAdmin):
     list_filter=["name", "email", "rating", ]
     list_per_page=5
 
-    def has_add_permission(self, request):  # из админки не разрешено создавать больше одной записи
+    def has_add_permission(self, request):  # из админки не разрешено создавать записи
         return  False
-
 
 class FAQAdmin(admin.ModelAdmin):
     list_display = ("question",  )

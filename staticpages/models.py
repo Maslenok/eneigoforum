@@ -2,33 +2,11 @@ from __future__ import unicode_literals
 from ckeditor.fields import RichTextField
 from django.utils.text import slugify
 from unidecode import unidecode
-
 from django.db import models
 
 # Create your models here.
 
 
-class EnergotechnologyAll(models.Model):
-    class Meta:
-        db_table="energotechnologyall"
-        verbose_name = "Энерготехнология"
-        verbose_name_plural = "Энерготехнологии"
-
-    text = RichTextField(verbose_name=u'Текст', blank=True)
-    title = models.CharField(max_length=100,  blank=True)
-    slug = models.SlugField(max_length=100, verbose_name='Короткое имя', blank=True)
-
-
-    def save(self):
-        super(EnergotechnologyAll, self).save()
-        self.slug = slugify(unidecode(self.title))
-        super(EnergotechnologyAll, self).save()
-
-    def __str__(self):
-        return self.title
-
-    def __unicode__(self):
-        return self.title
 
 
 class MainText(models.Model):
@@ -51,6 +29,7 @@ class MainText(models.Model):
 
     def __unicode__(self):
         return self.title
+
 
 class InfoText(models.Model):
     class Meta:

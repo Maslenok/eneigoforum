@@ -6,7 +6,6 @@ from staticpages.models import MainText
 
 
 def energotechnologyAll(request):
-    print("Общая энерготехнология")
     context = {}
     try:
         info=EnergotechnologyAll.objects.get()
@@ -18,7 +17,6 @@ def energotechnologyAll(request):
 
 
 def energotechnology(request,name):
-    print("Солнце энерготехнология")
     try:
         if name == "sun":  info=EnergotechnologySun.objects.get()
         if name == "east":  info = EnergotechnologyEast.objects.get()

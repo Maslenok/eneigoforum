@@ -1,10 +1,7 @@
 from django import template
 from factory.django import get_model
 from content.models import Answer,Question, News, Testimonials
-from energotechnology.apps import EnergotechnologyConfig
-from energotechnology.models import EnergotechnologyAll, EnergotechnologySun, EnergotechnologyWater, \
-    EnergotechnologyEast, EnergotechnologyOsveshenie, EnergotechnologyOtoplenie
-
+from energotechnology.admin import spisoc
 
 register = template.Library()
 
@@ -38,10 +35,6 @@ def tags_testimonials():
         error_new="Нет отзывов.Вы будете первым"
         return {"error_new": error_new}
 
-
-
-
-
 @register.inclusion_tag("energoforum_tag.html")
 def tags_energoforum(app_list):
     for app in app_list:
@@ -50,8 +43,24 @@ def tags_energoforum(app_list):
             for model in list_model:
                 model_class= get_model(app['app_label'], model['object_name'])
                 perm= model["perms"]
+                if model_class in spisoc:
+                    model["Hi"]= True
+                else:
+                    model["Lo"] = True
                 if perm["add"] == False:
                     model["object"] = model_class.objects.get()
 
-    return  {"list_model":list_model}
 
+    return  {"list_model":list_model }
+
+@register.inclusion_tag("staticpages_tag.html")
+def tags_ctaticpages(app):
+    list_model=app["models"]
+    for model in list_model:
+        model_class= get_model(app['app_label'], model['object_name'])
+        perm= model["perms"]
+        if perm["add"] == False:
+            model["object"] = model_class.objects.get()
+
+
+    return  {"list_model_static":list_model }

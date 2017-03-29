@@ -5,9 +5,9 @@
 
 {% block coltype %}colMS{% endblock %}
 
-{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+{% block bodyclass %} {{ block.super }} dashboard{% endblock %}
 
-{% block breadcrumbs %}{% endblock %}
+{% block breadcrumbs %} {% endblock %}
 
 {% block content %}
 <div id="content-main">
@@ -26,9 +26,22 @@
 
         <div class="app-{{ app.app_label }} module">
         <table>
+            {% if app.name == "Статические страницы "%}
+            <caption>
+            <a href="/admin/" class="section" title="{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}">{{ app.name }}</a>
 
+           </caption>
+
+              {% load content_tags %}
+              {% tags_ctaticpages  app  %}
+
+
+
+            {%else%}
         <caption>
+
             <a href="{{ app.app_url }}" class="section" title="{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}">{{ app.name }}</a>
+
         </caption>
         {% for model in app.models %}
             <tr class="model-{{ model.object_name|lower }}">
@@ -53,6 +66,7 @@
             {% endif %}
             </tr>
         {% endfor %}
+            {%endif%}
             {% if app.name == "Статические страницы "%}
               {% load content_tags %}
               {% tags_energoforum  app_list  %}

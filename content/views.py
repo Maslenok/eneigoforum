@@ -84,10 +84,8 @@ def newslist (request):
     try:
         news_list = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
         news_list = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
         news_list = paginator.page(paginator.num_pages)
     context = {"news_list":news_list,}
     return render(request, 'newsList.html', context)
@@ -108,10 +106,8 @@ def faq(request):
     try:
         faq_list = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
         faq_list = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
         faq_list = paginator.page(paginator.num_pages)
     context = {"faq_list":faq_list,}
     return render(request, 'faq.html', context)
