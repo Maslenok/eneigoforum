@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from oscar.defaults import *
 from django.conf import settings
 
 
