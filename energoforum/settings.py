@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'content',
     'energotechnology',
 
-
+    'widget_tweaks',
     'debug_toolbar',
 
 
@@ -70,7 +70,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-     'oscar.apps.basket.middleware.BasketMiddleware',
+    'oscar.apps.basket.middleware.BasketMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 
@@ -107,7 +107,7 @@ TEMPLATES = [
                 'oscar.apps.checkout.context_processors.checkout',
                 'oscar.core.context_processors.metadata',
             ],
-            'debug': DEBUG,
+
         },
     },
 ]
