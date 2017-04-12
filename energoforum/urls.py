@@ -19,6 +19,7 @@ from django.contrib import admin
 
 from energotechnology.views import energotechnologyAll, energotechnology
 from content.views import skipopros,testimonials, newslist, news, faq
+from magazine.views import catalog1, details
 from staticpages.views import index, info, contact
 from django.conf.urls.static import static
 from django.conf import settings
@@ -40,7 +41,12 @@ urlpatterns = [
     url(r'^info/$', info),
     url (r'^ckeditor/', include('ckeditor.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
-    url(r'^catalog/', include('magazine.urls', namespace='shop')),
+  #  url(r'^catalog/', include('magazine.urls', namespace='shop')),
+
+    url(r'^catalog/$', catalog1),
+    url(r'^details/$', details),
+
+
     # url(r'^', application.urls),  если  будем испоьзовать приложения
     url(r'^', index),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

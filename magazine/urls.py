@@ -3,8 +3,9 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.ProductList, name='ProductList'),
-    url(r'^(?P<category_slug>[-\w]+)/$', views.ProductList, name='ProductListByCategory'),
+  #  url(r'^(?P<category_slug>[-\w]+)/$', views.ProductList, name='ProductListByCategory'),
+   # url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)/$', views.ProductDetail, name='ProductDetail'),
+    url(r'^ catalog/$', views.Catalog),
+    url(r'^ details/$', views.Details),
 
-    url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)/$', views.ProductDetail, name='ProductDetail'),
-    url(r'^/detal/$', views.ProductDetailTdetalest, name='ProductDetail'),
 ]

@@ -20,7 +20,10 @@ def ProductDetail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
     return render(request, 'detail.html', {'product': product})
 
-def ProductDetailTdetalest(request):
+def catalog1(request):
 
-    return render(request, 'detail.html', )
+    return render(request, 'list.html', {'name':"Саня"})
+
+def details(request):
+    return render(request, 'details.html', {'name':"Саня"} )
 

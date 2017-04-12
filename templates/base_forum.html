@@ -276,7 +276,9 @@ function DoWin(namehtm,wwin,hwin) {
 
     <div id="content">
 
-           {% block content%} {% endblock %}
+
+
+           {% block content%}     {% endblock %}
 
 
 
@@ -357,6 +359,7 @@ function DoWin(namehtm,wwin,hwin) {
 {% if "energotechnology" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
 {% if "info" in  request.path  %}  <div id="header" class="n_info">  {%endif %}
 {% if "catalog" in  request.path  %}  <div id="header" class="n_shop">  {%endif %}
+            {% if "details" in  request.path  %}  <div id="header" class="n_shop">  {%endif %}
 {% if "faq" in  request.path  %}  <div id="header" class="n_faq">  {%endif %}
 {% if "contact" in  request.path  %}  <div id="header" class="n_contact">  {%endif %}
                     {% ifequal request.path "/" %}  <div id="header" class="n_info">   {%endifequal %}
