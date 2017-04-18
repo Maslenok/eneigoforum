@@ -1,6 +1,7 @@
 <!doctype html>
 
-
+{% load staticfiles %}
+{% load i18n %}
 
 <head>
    <meta name="language" content="ru">
@@ -13,6 +14,22 @@
   <meta name="description" content="">
   <script type="text/javascript" src="/static/js/jquery.js.Без названия"></script>
   <script type="text/javascript" src="/static/js//js.js.Без названия"></script>
+
+
+    {% block tracking %}
+            {# Default to using Google analytics #}
+            {% include "partials/google_analytics.html" %}
+    {% endblock %}
+
+       <!-- иконка окна -->
+        {% block favicon %}
+            <link rel="shortcut icon" href="{% static "oscar/favicon.ico" %}" />
+        {% endblock %}
+
+        {# Additional CSS - specific to certain pages #}
+        {% block extrastyles %}   {% endblock %}
+
+        {% block extrahead %}{% endblock %}
 
 
 </head>
@@ -268,7 +285,44 @@ function DoWin(namehtm,wwin,hwin) {
   /*]]>*/
 </script>
 
-{% load staticfiles %}
+
+<div id="top_page" class="navbar navbar-default navbar-static-top accounts">
+
+
+
+    <div class="navbar-collapse account-collapse collapse">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+                    <li>
+                        {% if num_unread_notifications > 0 %}
+                            {# If user has new notifications - we change account link to go to inbox #}
+                            <a href="{% url 'customer:notifications-inbox' %}">
+                                <i class="icon-user"></i>
+                                {% trans "Account" %}
+                                <span class="label label-important">{{ num_unread_notifications }}</span>
+                            </a>
+                        {% else %}
+                            <a href="{% url 'customer:summary' %}"><i class="icon-user"></i> {% trans "Account" %}</a>
+                        {% endif %}
+                    </li>
+                    {% if user.is_staff or perms.partner.dashboard_access %}
+                        <li><a href="{% url 'dashboard:index' %}"><i class="icon-list-ul"></i> {% trans "Dashboard" %}</a></li>
+                    {% endif %}
+                    <li><a id="logout_link" href="{% url 'customer:logout' %}"><i class="icon-signout"></i> {% trans "Logout" %}</a></li>
+                {% else %}
+                    <li><a id="login_link" href="{% url 'customer:login' %}"><i class="icon-signin"></i> {% trans "Login or register" %}</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 
 <div id="wrapper">
@@ -276,10 +330,40 @@ function DoWin(namehtm,wwin,hwin) {
 
     <div id="content">
 
+        <div id="content-text">
+
+       {% block content%}     {% endblock %}
+
+      {# Main content goes in this 'layout' block #}
+        {% block layout %}{% endblock %}
 
 
-           {% block content%}     {% endblock %}
 
+
+
+        </div>
+
+        {# Scripts loaded from a CDN. #}
+        {% block cdn_scripts %}
+            <!-- jQuery -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="{% static "oscar/js/jquery/jquery-1.9.1.min.js" %}"><\/script>')</script>
+        {% endblock %}
+
+
+        {# Local scripts #}
+        {% block scripts %}
+        {% endblock %}
+
+
+        {# Additional JS scripts #}
+        {% block extrascripts %}{% endblock %}
+
+        <script type="text/javascript">
+            $(function() {
+                {% block onbodyload %}{% endblock %}
+            });
+        </script>
 
 
     <div id="sidebar">
