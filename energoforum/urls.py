@@ -1,5 +1,4 @@
 """energoforum URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
 Examples:
@@ -16,10 +15,10 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
-
+from oscar.app import application
 from energotechnology.views import energotechnologyAll, energotechnology
+from oscar.views import handler403, handler404, handler500
 from content.views import skipopros,testimonials, newslist, news, faq
-from magazine.views import catalog1, details
 from staticpages.views import index, info, contact
 from django.conf.urls.static import static
 from django.conf import settings
@@ -41,16 +40,21 @@ urlpatterns = [
     url(r'^info/$', info),
     url (r'^ckeditor/', include('ckeditor.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
-  #  url(r'^catalog/', include('magazine.urls', namespace='shop')),
-
-    url(r'^catalog/$', catalog1),
-    url(r'^details/$', details),
-
-
+    url(r'^catalog/', include(application.urls)),
     # url(r'^', application.urls),  если  будем испоьзовать приложения
     url(r'^', index),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
+    import debug_toolbar
+
+    # Server statics and uploaded media
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+    # Allow error pages to be tested
+    urlpatterns += [
+        url(r'^403$', handler403),
+        url(r'^404$', handler404),
+        url(r'^500$', handler500),
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ]
