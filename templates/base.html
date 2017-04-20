@@ -1,7 +1,8 @@
-<!doctype html>
 
+<!doctype html>
 {% load staticfiles %}
-{% load i18n %}
+
+
 
 <head>
    <meta name="language" content="ru">
@@ -15,23 +16,16 @@
   <script type="text/javascript" src="/static/js/jquery.js.Без названия"></script>
   <script type="text/javascript" src="/static/js//js.js.Без названия"></script>
 
-
-    {% block tracking %}
-            {# Default to using Google analytics #}
-            {% include "partials/google_analytics.html" %}
+    {% block favicon %}
+            <link rel="shortcut icon" href="{% static "oscar/favicon.ico" %}" />
     {% endblock %}
 
-       <!-- иконка окна -->
-        {% block favicon %}
-            <link rel="shortcut icon" href="{% static "oscar/favicon.ico" %}" />
+    {% block extrahead %}{% endblock %}
+
+        {% block tracking %}
+            {# Default to using Google analytics #}
+            {% include "partials/google_analytics.html" %}
         {% endblock %}
-
-        {# Additional CSS - specific to certain pages #}
-        {% block extrastyles %}   {% endblock %}
-
-        {% block extrahead %}{% endblock %}
-
-
 </head>
 
 
@@ -47,13 +41,11 @@
 //
 // Maarten Balliauw
 // ----------------------------------------------
-
 var oId = 1;
 var showStatusMessage = false;
 var statusMessages = new Array("", "");
 var showStatusId = "";
 var iOpenCallCount = 0;
-
 function prajax_xmlobj(uri, post_data, callbackFunction) {
   var req;
   if (window.XMLHttpRequest) {
@@ -64,7 +56,6 @@ function prajax_xmlobj(uri, post_data, callbackFunction) {
         req = new ActiveXObject("Microsoft.XMLHTTP");
     }
   }
-
   if (req != null) {
     req.onreadystatechange = function () {
       if (req.readyState == 4) {
@@ -73,17 +64,14 @@ function prajax_xmlobj(uri, post_data, callbackFunction) {
           prajax_busy(0);
         } else if(req.status == 12002){
           prajax_busy(2);
-
               alert("Server is busy at the moment, your request will be submitted in 5 seconds.");
               pause(5000);
               prajax_request(uri, post_data, callbackFunction);
                 } else {
           prajax_busy(2);
-
               alert("Server is busy at the moment, your request will be submitted in 5 seconds.");
             pause(5000);
               prajax_request(uri, post_data, callbackFunction);
-
 //              setTimeout(function() {prajax_request(uri, post_data, callbackFunction)}, time1);
                 }
         req.onreadystatechange = function() {};
@@ -93,7 +81,6 @@ function prajax_xmlobj(uri, post_data, callbackFunction) {
   }
   return req;
 }
-
 function prajax_request(uri, post_data, callbackFunction) {
   req = prajax_xmlobj(uri, post_data, callbackFunction);
   if (req != null) {
@@ -108,34 +95,27 @@ function prajax_request(uri, post_data, callbackFunction) {
       alert("[PRAjax] Could not create XML request object");
   }
 }
-
 function prajax_call(func_name, args) {
   var uri;
   var post_data;
-
   uri = "/main.php?ajaxparam=/info.html";
   post_data = "rs=" + escape(func_name);
   for (i = 0; i < args.length-1; i++) {
     post_data = post_data + "&rsargs[]=<value>" + escape(prajax_Value(args[i])) + "</value>";
   }
-
   prajax_request(uri, post_data, args[args.length-1]);
 }
-
 function prajax_object_call(object, func_name, args) {
   var uri;
   var post_data;
-
   uri = "/main.php?ajaxparam=/info.html";
   post_data = "rs=" + escape(func_name);
   for (i = 0; i < args.length-1; i++) {
     post_data = post_data + "&rsargs[]=<value>" + escape(prajax_Value(args[i])) + "</value>";
   }
   post_data = post_data + "&rsobj=" + escape(prajax_Value(object));
-
   prajax_request(uri, post_data, args[args.length-1]);
 }
-
 function prajax_receivedata(func_name, data) {
   iOpenCallCount--;
   if (data.indexOf("[PRAjax]") != -1) {
@@ -151,12 +131,10 @@ function prajax_receivedata(func_name, data) {
       }
   }
 }
-
 function prajax_Value(pValue) {
     if (pValue == "") {
         return "<value></value>";
     }
-
     if (typeof(pValue) == "object") {
         if (pValue.constructor.toString().indexOf("Array") != -1) {
             return prajax_Array(pValue);
@@ -167,42 +145,34 @@ function prajax_Value(pValue) {
         return "<value><![CDATA[" + addslashes(pValue) + "]]></value>";
     }
 }
-
 function prajax_Object(pValue) {
     if (pValue == null) {
         return "<value>NULL</value>";
     }
-
     var aObject = new Array();
     for (oProperty in pValue) {
         aObject.push("<" + oProperty + ">" + prajax_Value(eval("pValue." + oProperty)) + "</" + oProperty + ">");
     }
     return "<prajax_object_" + pValue.prajaxclass + "><class>" + pValue.prajaxclass + "</class>" + aObject.join("") + "</prajax_object_" + pValue.prajaxclass + ">";
 }
-
 function prajax_Array(pValue) {
     var aReturn = new Array();
-
     // Loop trough array
     for (oValue in pValue) {
       aReturn.push(prajax_Value(pValue[oValue]));
     }
-
     var strReturn = "";
     for (var i = 0; i < aReturn.length; i++) {
         strReturn += "<element id=\"" + prajax_OID() + "\">" + aReturn[i] + "</element>";
     }
     return "<prajax_array>" + strReturn + "</prajax_array>";
 }
-
 function prajax_OID() {
   return oId++;
 }
-
 function prajax_change_property(pElementId, pProperty, pValue) {
   eval("document.getElementById('" + pElementId + "')." + pProperty + " = " + pValue);
 }
-
 function prajax_busy(pStatus) {
   if (iOpenCallCount > 0) {
       pStatus = 1;
@@ -211,7 +181,6 @@ function prajax_busy(pStatus) {
     document.getElementById(showStatusId).innerHTML = statusMessages[pStatus];
   }
 }
-
 function addslashes(pString) {
   pString = pString + "";
   pString = pString.replace(/\\/g,"\\\\");
@@ -219,30 +188,22 @@ function addslashes(pString) {
   pString = pString.replace(/\"/g,"\\\"");
   return pString;
 }
-
 function stripslashes(pString) {
   pString = pString + "";
   return pString.replace(/(\\)([\\\'\"])/g,"$2");
 }
-
 // Wrapper function a_addtocart
 function a_addtocart () {
  prajax_call("a_addtocart", a_addtocart.arguments);
 }
-
-
 // Wrapper function a_addtocompare
 function a_addtocompare () {
  prajax_call("a_addtocompare", a_addtocompare.arguments);
 }
-
-
 // Wrapper function a_get_cart
 function a_get_cart () {
  prajax_call("a_get_cart", a_get_cart.arguments);
 }
-
-
 /*]]>*/
 </script>
 
@@ -256,7 +217,6 @@ function DoWin(namehtm,wwin,hwin) {
   eval("demoWin=window.open('"+namehtm+"', 'demonstrationWin', 'width="+wwin+",height="+hwin+",location=0,top=0')");
   demoWin.focus();
 }
-
   function addtocompare(id){
   a_addtocompare(id, addtocompare_cb);
   }
@@ -267,7 +227,6 @@ function DoWin(namehtm,wwin,hwin) {
     setTimeout(function(){document.getElementById('divaddtocart').style.visibility = 'hidden'}, 2500);
     document.getElementById("compare_a").style.visibility="visible";
   }
-
   function addtocart(id){
   a_addtocart(id, addtocart_cb);
   }
@@ -286,62 +245,18 @@ function DoWin(namehtm,wwin,hwin) {
 </script>
 
 
-<div id="top_page" class="navbar navbar-default navbar-static-top accounts">
-
-
-
-    <div class="navbar-collapse account-collapse collapse">
-        <div class="container-fluid">
-
-            <ul class="nav navbar-nav navbar-right">
-                {% if user.is_authenticated %}
-                    <li>
-                        {% if num_unread_notifications > 0 %}
-                            {# If user has new notifications - we change account link to go to inbox #}
-                            <a href="{% url 'customer:notifications-inbox' %}">
-                                <i class="icon-user"></i>
-                                {% trans "Account" %}
-                                <span class="label label-important">{{ num_unread_notifications }}</span>
-                            </a>
-                        {% else %}
-                            <a href="{% url 'customer:summary' %}"><i class="icon-user"></i> {% trans "Account" %}</a>
-                        {% endif %}
-                    </li>
-                    {% if user.is_staff or perms.partner.dashboard_access %}
-                        <li><a href="{% url 'dashboard:index' %}"><i class="icon-list-ul"></i> {% trans "Dashboard" %}</a></li>
-                    {% endif %}
-                    <li><a id="logout_link" href="{% url 'customer:logout' %}"><i class="icon-signout"></i> {% trans "Logout" %}</a></li>
-                {% else %}
-                    <li><a id="login_link" href="{% url 'customer:login' %}"><i class="icon-signin"></i> {% trans "Login or register" %}</a></li>
-                {% endif %}
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
 
 <div id="wrapper">
   <div id="logo"><dfn>Энерго</dfn>Форум <a href="/">(на главную)</a></div>
 
     <div id="content">
 
-        <div id="content-text">
+         <div id="content-text">
 
-       {% block content%}     {% endblock %}
-
-      {# Main content goes in this 'layout' block #}
-        {% block layout %}{% endblock %}
+		     {% block content%}     {% endblock %}
 
 
 
-
-
-        </div>
 
         {# Scripts loaded from a CDN. #}
         {% block cdn_scripts %}
@@ -350,20 +265,21 @@ function DoWin(namehtm,wwin,hwin) {
             <script>window.jQuery || document.write('<script src="{% static "oscar/js/jquery/jquery-1.9.1.min.js" %}"><\/script>')</script>
         {% endblock %}
 
-
         {# Local scripts #}
         {% block scripts %}
         {% endblock %}
 
-
         {# Additional JS scripts #}
         {% block extrascripts %}{% endblock %}
 
+        {# Block for body onload functions #}
         <script type="text/javascript">
             $(function() {
                 {% block onbodyload %}{% endblock %}
             });
         </script>
+
+         </div>
 
 
     <div id="sidebar">
@@ -375,7 +291,12 @@ function DoWin(namehtm,wwin,hwin) {
           <li><a href="/info/">Информация</a></li>
 
           <li>
-          	<a href="/catalog/">Магазин</a>
+
+              {% if "catalog" in  request.path  %}
+              {% block navigation %}{%endblock%}
+              {%else%}
+              <a href="/catalog/">Магазин</a>
+              {%endif%}
           	          </li>
           <li><a href="/faq/">FAQ</a></li>
           <li><a href="/contact/">Контакты</a></li>
@@ -440,18 +361,14 @@ function DoWin(namehtm,wwin,hwin) {
 
 
 
-{% if "energotechnology" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
-{% if "info" in  request.path  %}  <div id="header" class="n_info">  {%endif %}
-{% if "catalog" in  request.path  %}  <div id="header" class="n_shop">  {%endif %}
-            {% if "details" in  request.path  %}  <div id="header" class="n_shop">  {%endif %}
-{% if "faq" in  request.path  %}  <div id="header" class="n_faq">  {%endif %}
-{% if "contact" in  request.path  %}  <div id="header" class="n_contact">  {%endif %}
-                    {% ifequal request.path "/" %}  <div id="header" class="n_info">   {%endifequal %}
-{% if "testimonials" in  request.path  %}  <div id="header" class="n_info">  {%endif %}
-{% if "/news/" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
-{% if "/skipopros/" in  request.path  %}  <div id="header" class="n_energo">  {%endif %}
-{% if "dashboard" in  request.path  %}  <div id="header" class="n_info">  {%endif %}
-
+{% if "energotechnology" in  request.path  %}  <div id="header" class="n_energo">
+{% elif "info" in  request.path  %}            <div id="header" class="n_info">
+{% elif "catalog" in  request.path  %}         <div id="header" class="n_shop">
+{% elif "faq" in  request.path  %}             <div id="header" class="n_faq">
+{% elif "contact" in  request.path  %}         <div id="header" class="n_contact">
+    {% else %}
+     <div id="header" class="n_info">
+{%endif%}
 
 <div id="divaddtocart"></div>
 
@@ -485,9 +402,13 @@ function DoWin(namehtm,wwin,hwin) {
 
 
 
-
     <span class="tel">(057) 750-75-86</span>
-    <ul class="mini_nav">
+
+                                            {% include "partials/nav_accounts.html" %}
+
+                                            <ul class="mini_nav">
+
+
       <li class="cart"><a href="/shoppingcart/" title="Корзина">Корзина</a></li>
       <li class="site-map"><a href="/map/" title="Карта Сайта">Карта Сайта</a></li>
       <li class="contact"><a href="/contact/" title="Контакты">Контакты</a></li>
@@ -496,7 +417,7 @@ function DoWin(namehtm,wwin,hwin) {
       <div id="adv3">
         <img src="{% static "/img/userfiles/ill-07.jpg" %}" alt="баннер">
       </div>
-      <form class="search-form" action="http://energoforum/search.html" method="get">
+      <form class="search-form" action="http:/energoforum/search.html" method="get">
         <fieldset>
           <input type="text" id="srch" name="search">
           <input type="submit" id="btn_srch" value="поиск" title="поиск">
@@ -555,7 +476,6 @@ function DoWin(namehtm,wwin,hwin) {
   <div class="podbor">
   	<a href="/podbor.html"><span></span></a>
   </div>
-
   <div class="discount">
   	<a href="/discount.html"><span></span></a>
   </div>
