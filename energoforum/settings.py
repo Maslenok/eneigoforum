@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'content',
     'energotechnology',
     'widget_tweaks',
+    'oscar_energoforum',
 
     'debug_toolbar',
 

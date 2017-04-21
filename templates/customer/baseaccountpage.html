@@ -10,14 +10,14 @@
 
 {% block breadcrumbs %}
     <ul class="breadcrumb">
-        <li>
-            <a href="{{ homepage_url }}">{% trans 'Home' %}</a>
-        </li>
-        <li>
-            <a href="{% url 'customer:summary' %}">{% trans 'Account' %}</a>
-        </li>
+
+            <a href="{{ homepage_url }}">Начало</a>/
+
+
+            <a href="{% url 'customer:summary' %}">Учетная запись</a>/
+
         {% block extra_breadcrumbs %}{% endblock %}
-        <li class="active">{{ page_title }}</li>
+        {{ page_title }}
     </ul>
 {% endblock %}
 
@@ -52,5 +52,5 @@
 {% endblock %}
 
 {% block content %}
-    {% block tabcontent %}{% endblock tabcontent %}
+    {% block tabcontent %} {% endblock tabcontent %}
 {% endblock content %}

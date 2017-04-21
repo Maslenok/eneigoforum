@@ -19,16 +19,16 @@
 
 {% block breadcrumbs %}
 <ul class="breadcrumb">
-    <li>
-        <a href="{{ homepage_url }}">{% trans "Home" %}</a>
-    </li>
-    {% with category=product.categories.all.0 %}
+
+        <a href="{{ homepage_url }}">Начало</a>/
+
+        {% with category=product.categories.all.0 %}
         {% for c in category.get_ancestors_and_self %}
-        <li>
-            <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
-        </li>
+
+            <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>/
+
         {% endfor %}
-        <li class="active">{{ product.title }}</li>
+       <!--  <li class="active">{{ product.title }}</li>  -->
 
         {% get_back_button as backbutton %}
         {% if backbutton %}

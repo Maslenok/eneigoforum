@@ -1,7 +1,7 @@
 
 <!doctype html>
 {% load staticfiles %}
-
+{% load promotion_tags %}
 
 
 <head>
@@ -252,10 +252,42 @@ function DoWin(namehtm,wwin,hwin) {
     <div id="content">
 
          <div id="content-text">
+             {% block breadcrumbs %} {% endblock %}
 
-		     {% block content%}     {% endblock %}
+<!--  проверка начало
+ проверка конец
+                          -->
 
 
+
+              <div class="container-fluid page">
+            <div class="page_inner">
+                {% block header %}
+                    <div class="page-header action">
+                        <h1>{% block headertext %}{% endblock %}</h1>
+                    </div>
+                {% endblock %}
+                {% include "partials/alert_messages.html" %}
+                {% block subnavigation %}{% endblock %}
+                <div class="content">
+                    {% block subheader %}{% endblock subheader %}
+
+                    {# Render promotions #}
+                    <div id="promotions">
+                        {% for promotion in promotions_page %}
+                            {% render_promotion promotion %}
+                        {% endfor %}
+                    </div>
+
+                    {# Div exists for AJAX updates to entire content section #}
+                    <div id="content_inner">{% block content %}{% endblock %}</div>
+                </div>
+            </div>
+        </div>
+
+
+
+ {% include "partials/footer.html" %}
 
 
         {# Scripts loaded from a CDN. #}
@@ -293,7 +325,8 @@ function DoWin(namehtm,wwin,hwin) {
           <li>
 
               {% if "catalog" in  request.path  %}
-              {% block navigation %}{%endblock%}
+              <a href="/catalog/">Магазин</a>
+              {% include "partials/nav_primary_energoforum.html" %}
               {%else%}
               <a href="/catalog/">Магазин</a>
               {%endif%}
@@ -417,12 +450,19 @@ function DoWin(namehtm,wwin,hwin) {
       <div id="adv3">
         <img src="{% static "/img/userfiles/ill-07.jpg" %}" alt="баннер">
       </div>
-      <form class="search-form" action="http:/energoforum/search.html" method="get">
+
+
+
+        <form class="search-form" action="{% url 'search:search' %}" method="get">
         <fieldset>
-          <input type="text" id="srch" name="search">
-          <input type="submit" id="btn_srch" value="поиск" title="поиск">
+          <input type="text" id="srch" name="q">
+          <input type="submit" id="btn_srch" value="Найти" title="Поиск">
         </fieldset>
-      </form>    </div>
+      </form>
+
+
+
+    </div>
 
 
 

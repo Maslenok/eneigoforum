@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block breadcrumbs %}
+
     <ul class="breadcrumb">
         <li>
             <a href="{{ homepage_url }}">{% trans "Home" %}</a>
@@ -17,7 +18,7 @@
                 </li>
             {% endfor %}
             <li>
-                <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+                <a href="{{ product.get_absolute_url }}">{{ product.title }} </a>
             </li>
             <li>
                 <a href="{% url 'catalogue:reviews-list' product_slug=product.slug product_pk=product.pk %}">{% trans "Reviews" %}</a>
