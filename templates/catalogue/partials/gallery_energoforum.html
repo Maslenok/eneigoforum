@@ -1,0 +1,11 @@
+{% load thumbnail %}
+{% load i18n %}
+{% load staticfiles %}
+
+
+{% with image=product.primary_image %}
+    {% thumbnail image.original "355x355" upscale=True as thumb %}
+         <img src="{{ thumb.url }}" alt="{{ product.get_title }}" />
+    {% endthumbnail %}
+{% endwith %}
+

@@ -56,7 +56,7 @@ INSTALLED_APPS = [
 
 
 
-]+ get_core_apps()
+] + get_core_apps(['oscar_energoforum.promotions'])
 
 SITE_ID = 1
 
